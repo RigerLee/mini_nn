@@ -1,11 +1,11 @@
 #pragma once
 
 #include <iostream>
+#include "optimizer.hpp"
 #include "xtensor/xarray.hpp"
 #include "xtensor/xio.hpp"
-#include "xtensor/xview.hpp"
 #include "xtensor/xpad.hpp"
-#include "optimizer.hpp"
+#include "xtensor/xview.hpp"
 
 template <typename T>
 class Layer {
@@ -16,10 +16,12 @@ public:
   Layer() = default;
   virtual ~Layer() = default;
 
-  virtual Matrix forward(const Matrix& in) {return Matrix();};
-  virtual Matrix backward(const Matrix& dout) {return Matrix();};
+  virtual Matrix forward(const Matrix& in) { return Matrix(); };
+  virtual Matrix backward(const Matrix& dout) { return Matrix(); };
   virtual void init_weight() {};
   virtual void init_bias() {};
+  virtual void set_weight(Matrix W) { W_ = W; };
+  virtual void set_bias(Matrix b) { b_ = b; };
 
 protected:
   Shape in_shape_;
@@ -31,5 +33,4 @@ protected:
   Matrix b_;
   Matrix db_;
   Optimizer<T> optimizer_;
-
 };
