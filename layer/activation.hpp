@@ -11,8 +11,8 @@ public:
   ReLU() = default;
   virtual ~ReLU() = default;
 
-  virtual Matrix forward() override;
-  virtual Matrix backward() override;
+  virtual Matrix forward(const Matrix& in) override;
+  virtual Matrix backward(const Matrix& dout) override;
 
 };
 

@@ -4,6 +4,7 @@
 #include "xtensor/xarray.hpp"
 #include "xtensor/xio.hpp"
 #include "xtensor/xview.hpp"
+#include "xtensor/xpad.hpp"
 #include "optimizer.hpp"
 
 template <typename T>
@@ -15,8 +16,8 @@ public:
   Layer() = default;
   virtual ~Layer() = default;
 
-  virtual Matrix forward() {return Matrix();};
-  virtual Matrix backward() {return Matrix();};
+  virtual Matrix forward(const Matrix& in) {return Matrix();};
+  virtual Matrix backward(const Matrix& dout) {return Matrix();};
   virtual void init_weight() {};
   virtual void init_bias() {};
 
@@ -25,8 +26,8 @@ protected:
   Shape out_shape_;
   Matrix in_;
   Matrix din_;
-  Matrix w_;
-  Matrix dw_;
+  Matrix W_;
+  Matrix dW_;
   Matrix b_;
   Matrix db_;
   Optimizer<T> optimizer_;

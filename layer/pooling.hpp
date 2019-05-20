@@ -11,8 +11,8 @@ public:
   MaxPool2d() = default;
   virtual ~MaxPool2d() = default;
 
-  virtual Matrix forward() override;
-  virtual Matrix backward() override;
+  virtual Matrix forward(const Matrix& in) override;
+  virtual Matrix backward(const Matrix& dout) override;
 
 };
 

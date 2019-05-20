@@ -11,8 +11,8 @@ public:
   Linear() = default;
   virtual ~Linear() = default;
 
-  virtual Matrix forward() override;
-  virtual Matrix backward() override;
+  virtual Matrix forward(const Matrix& in) override;
+  virtual Matrix backward(const Matrix& dout) override;
 
   virtual void init_weight() override;
   virtual void init_bias() override;
