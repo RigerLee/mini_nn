@@ -11,12 +11,18 @@ public:
   Linear() = default;
   virtual ~Linear() = default;
 
+  Linear(size_t in_dims, size_t out_dims);
+
   virtual Matrix forward(const Matrix& in) override;
   virtual Matrix backward(const Matrix& dout) override;
 
-  virtual void init_weight() override;
-  virtual void init_bias() override;
+  virtual void init_weight() override {};
+  virtual void init_bias() override {};
 
+protected:
+  Matrix in_reshape_;
+  size_t in_dims_;
+  size_t out_dims_;
 };
 
 #include "linear_impl.hpp"

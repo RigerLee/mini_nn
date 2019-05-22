@@ -12,7 +12,7 @@ public:
   virtual ~Conv2d() = default;
 
   Conv2d(size_t in_channels,
-         size_t out_channels = 16,
+         size_t out_channels,
          size_t kernel_size = 3,
          size_t stride = 1,
          size_t padding = 1);

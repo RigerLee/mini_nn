@@ -2,9 +2,12 @@
 
 #include <iostream>
 #include "optimizer.hpp"
+#include "xtensor-blas/xlinalg.hpp"
 #include "xtensor/xarray.hpp"
 #include "xtensor/xio.hpp"
+#include "xtensor/xmath.hpp"
 #include "xtensor/xpad.hpp"
+#include "xtensor/xrandom.hpp"
 #include "xtensor/xview.hpp"
 
 template <typename T>
