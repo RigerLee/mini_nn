@@ -1,6 +1,7 @@
 #pragma once
 
-#include "layer.hpp"
+#include "init.hpp"
+#include "layer_base.hpp"
 
 template <typename T>
 class Linear : public Layer<T> {
@@ -16,8 +17,8 @@ public:
   virtual Matrix forward(const Matrix& in) override;
   virtual Matrix backward(const Matrix& dout) override;
 
-  virtual void init_weight() override {};
-  virtual void init_bias() override {};
+  // for init
+  virtual size_t get_fan();
 
 protected:
   Matrix in_reshape_;

@@ -5,6 +5,7 @@ Conv2d<T>::Conv2d(size_t in_channels,
                   size_t kernel_size,
                   size_t stride,
                   size_t padding) {
+  this->layer_type_ = CONV;
   Shape W_shape = {out_channels, in_channels, kernel_size, kernel_size};
   Shape b_shape = {out_channels};
 
@@ -18,6 +19,7 @@ Conv2d<T>::Conv2d(size_t in_channels,
   this->b_ = xt::zeros<T>(b_shape);  // Matrix(b_shape);
   this->dW_ = Matrix(W_shape);
   this->db_ = Matrix(b_shape);
+  kaiming_normal(*this, "ReLU");
 }
 
 template <typename T>
@@ -114,6 +116,13 @@ xt::xarray<T> Conv2d<T>::backward(const xt::xarray<T>& dout) {
     xt::view(din_pad, xt::all(), xt::all(),
              xt::range(this->padding_, din_pad.shape(2) - this->padding_),
              xt::range(this->padding_, din_pad.shape(3) - this->padding_));
+  this->net_->get_optimizer()->update(this->W_, this->dW_);
+  this->net_->get_optimizer()->update(this->b_, this->db_);
 
   return this->din_;
+}
+
+template <typename T>
+size_t Conv2d<T>::get_fan() {
+  return this->W_.shape(1) * this->W_.shape(2) * this->W_.shape(3);
 }

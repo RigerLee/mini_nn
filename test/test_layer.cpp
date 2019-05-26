@@ -1,5 +1,8 @@
 #include <iostream>
-#include "layer_common.hpp"
+#include "activation.hpp"
+#include "convolution.hpp"
+#include "linear.hpp"
+#include "pooling.hpp"
 
 int main(int argc, char** argv) {
   {
@@ -307,5 +310,20 @@ int main(int argc, char** argv) {
     std::cout << dinput << std::endl;
     std::cout << "------------Test MaxPool2d done------------" << std::endl;
   }
+  {
+    std::cout << "--------------Test ReLU start--------------" << std::endl;
+    ReLU<double> test;
+    auto input = xt::linspace<double>(-0.1, 0.5, 240).reshape({2, 4, 5, 6});
+    auto out = test.forward(input);
+
+    std::cout << out << std::endl;
+
+    std::cout << "--------------------------" << std::endl;
+
+    auto dinput = test.backward(out);
+    std::cout << dinput << std::endl;
+    std::cout << "--------------Test ReLU done--------------" << std::endl;
+  }
+
   return 0;
 }

@@ -1,5 +1,6 @@
 template <typename T>
 MaxPool2d<T>::MaxPool2d(size_t kernel_size, size_t stride, size_t padding) {
+  this->layer_type_ = POOL;
   // default stride is kernel_size for pooling
   if (stride == 0) stride = kernel_size;
   this->kernel_size_ = kernel_size;

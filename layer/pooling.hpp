@@ -1,6 +1,6 @@
 #pragma once
 
-#include "layer.hpp"
+#include "layer_base.hpp"
 
 template <typename T>
 class MaxPool2d : public Layer<T> {

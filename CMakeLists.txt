@@ -15,8 +15,8 @@ include_directories(
   ${XTENSOR_INCLUDE_DIR}
   ${XTENSOR_BLAS_INCLUDE_DIR}
   optimizer
-  layer
   loss
+  layer
   loader
   network
 )
