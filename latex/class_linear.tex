@@ -1,0 +1,164 @@
+\hypertarget{class_linear}{}\section{Linear$<$ T $>$ Class Template Reference}
+\label{class_linear}\index{Linear$<$ T $>$@{Linear$<$ T $>$}}
+
+
+{\ttfamily \#include $<$linear.\+hpp$>$}
+
+
+
+Inheritance diagram for Linear$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{class_linear__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Linear$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{class_linear__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef xt\+::xarray$<$ T $>$ \mbox{\hyperlink{class_linear_a8e402d70272bdb6406745f7ec4139f16}{Matrix}}
+\item 
+typedef Matrix\+::shape\+\_\+type \mbox{\hyperlink{class_linear_afeccdcd7a158d0fe034436e4eafae066}{Shape}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_linear_a905089a6472d97cc8b1d201fdd3deef9}{Linear}} ()=default
+\item 
+virtual \mbox{\hyperlink{class_linear_a42109067fe1d9da36148f7c4f330b564}{$\sim$\+Linear}} ()=default
+\item 
+\mbox{\hyperlink{class_linear_a335a168705982b1dbf9c16b89465995e}{Linear}} (size\+\_\+t in\+\_\+dims, size\+\_\+t out\+\_\+dims)
+\item 
+virtual \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \mbox{\hyperlink{class_linear_a901668e9219a8d446b2ac60718b9c9f1}{forward}} (const \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \&in) override
+\item 
+virtual \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \mbox{\hyperlink{class_linear_a747db1996e723fae7c9713d4b7f303af}{backward}} (const \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \&dout) override
+\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_linear_a753a7cb02a0b18e8922d23db905eb534}{get\+\_\+fan}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \mbox{\hyperlink{class_linear_a52fbc58c45b62d75089fc627c5210455}{in\+\_\+reshape\+\_\+}}
+\item 
+size\+\_\+t \mbox{\hyperlink{class_linear_ae15dad7b24bbc705da10f6896188ab13}{in\+\_\+dims\+\_\+}}
+\item 
+size\+\_\+t \mbox{\hyperlink{class_linear_affb0e56f0ca748a62e4aa5ce5733b491}{out\+\_\+dims\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_linear_a8e402d70272bdb6406745f7ec4139f16}\label{class_linear_a8e402d70272bdb6406745f7ec4139f16}} 
+\index{Linear$<$ T $>$@{Linear$<$ T $>$}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Linear$<$ T $>$@{Linear$<$ T $>$}}
+\subsubsection{\texorpdfstring{Matrix}{Matrix}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef xt\+::xarray$<$T$>$ \mbox{\hyperlink{class_linear}{Linear}}$<$ T $>$\+::\mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}}}
+
+\mbox{\Hypertarget{class_linear_afeccdcd7a158d0fe034436e4eafae066}\label{class_linear_afeccdcd7a158d0fe034436e4eafae066}} 
+\index{Linear$<$ T $>$@{Linear$<$ T $>$}!Shape@{Shape}}
+\index{Shape@{Shape}!Linear$<$ T $>$@{Linear$<$ T $>$}}
+\subsubsection{\texorpdfstring{Shape}{Shape}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef Matrix\+::shape\+\_\+type \mbox{\hyperlink{class_linear}{Linear}}$<$ T $>$\+::\mbox{\hyperlink{class_layer_a8313f42d2292d12dd5d40cc115636693}{Shape}}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_linear_a905089a6472d97cc8b1d201fdd3deef9}\label{class_linear_a905089a6472d97cc8b1d201fdd3deef9}} 
+\index{Linear$<$ T $>$@{Linear$<$ T $>$}!Linear@{Linear}}
+\index{Linear@{Linear}!Linear$<$ T $>$@{Linear$<$ T $>$}}
+\subsubsection{\texorpdfstring{Linear()}{Linear()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_linear}{Linear}}$<$ T $>$\+::\mbox{\hyperlink{class_linear}{Linear}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_linear_a42109067fe1d9da36148f7c4f330b564}\label{class_linear_a42109067fe1d9da36148f7c4f330b564}} 
+\index{Linear$<$ T $>$@{Linear$<$ T $>$}!````~Linear@{$\sim$Linear}}
+\index{````~Linear@{$\sim$Linear}!Linear$<$ T $>$@{Linear$<$ T $>$}}
+\subsubsection{\texorpdfstring{$\sim$Linear()}{~Linear()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual \mbox{\hyperlink{class_linear}{Linear}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_linear}{Linear}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_linear_a335a168705982b1dbf9c16b89465995e}\label{class_linear_a335a168705982b1dbf9c16b89465995e}} 
+\index{Linear$<$ T $>$@{Linear$<$ T $>$}!Linear@{Linear}}
+\index{Linear@{Linear}!Linear$<$ T $>$@{Linear$<$ T $>$}}
+\subsubsection{\texorpdfstring{Linear()}{Linear()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_linear}{Linear}}$<$ T $>$\+::\mbox{\hyperlink{class_linear}{Linear}} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{in\+\_\+dims,  }\item[{size\+\_\+t}]{out\+\_\+dims }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_linear_a747db1996e723fae7c9713d4b7f303af}\label{class_linear_a747db1996e723fae7c9713d4b7f303af}} 
+\index{Linear$<$ T $>$@{Linear$<$ T $>$}!backward@{backward}}
+\index{backward@{backward}!Linear$<$ T $>$@{Linear$<$ T $>$}}
+\subsubsection{\texorpdfstring{backward()}{backward()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+xt\+::xarray$<$ T $>$ \mbox{\hyperlink{class_linear}{Linear}}$<$ T $>$\+::backward (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \&}]{dout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_layer_ac4c13a3a85bfdd4d7d4d18669e3299fe}{Layer$<$ T $>$}}.
+
+\mbox{\Hypertarget{class_linear_a901668e9219a8d446b2ac60718b9c9f1}\label{class_linear_a901668e9219a8d446b2ac60718b9c9f1}} 
+\index{Linear$<$ T $>$@{Linear$<$ T $>$}!forward@{forward}}
+\index{forward@{forward}!Linear$<$ T $>$@{Linear$<$ T $>$}}
+\subsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+xt\+::xarray$<$ T $>$ \mbox{\hyperlink{class_linear}{Linear}}$<$ T $>$\+::forward (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_layer_ab15b665c86974b1cf1d7ba4e309cb0e5}{Layer$<$ T $>$}}.
+
+\mbox{\Hypertarget{class_linear_a753a7cb02a0b18e8922d23db905eb534}\label{class_linear_a753a7cb02a0b18e8922d23db905eb534}} 
+\index{Linear$<$ T $>$@{Linear$<$ T $>$}!get\_fan@{get\_fan}}
+\index{get\_fan@{get\_fan}!Linear$<$ T $>$@{Linear$<$ T $>$}}
+\subsubsection{\texorpdfstring{get\_fan()}{get\_fan()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+size\+\_\+t \mbox{\hyperlink{class_linear}{Linear}}$<$ T $>$\+::get\+\_\+fan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_layer_a43681206a2ef690667c41423b6b6f20b}{Layer$<$ T $>$}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_linear_ae15dad7b24bbc705da10f6896188ab13}\label{class_linear_ae15dad7b24bbc705da10f6896188ab13}} 
+\index{Linear$<$ T $>$@{Linear$<$ T $>$}!in\_dims\_@{in\_dims\_}}
+\index{in\_dims\_@{in\_dims\_}!Linear$<$ T $>$@{Linear$<$ T $>$}}
+\subsubsection{\texorpdfstring{in\_dims\_}{in\_dims\_}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+size\+\_\+t \mbox{\hyperlink{class_linear}{Linear}}$<$ T $>$\+::in\+\_\+dims\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_linear_a52fbc58c45b62d75089fc627c5210455}\label{class_linear_a52fbc58c45b62d75089fc627c5210455}} 
+\index{Linear$<$ T $>$@{Linear$<$ T $>$}!in\_reshape\_@{in\_reshape\_}}
+\index{in\_reshape\_@{in\_reshape\_}!Linear$<$ T $>$@{Linear$<$ T $>$}}
+\subsubsection{\texorpdfstring{in\_reshape\_}{in\_reshape\_}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \mbox{\hyperlink{class_linear}{Linear}}$<$ T $>$\+::in\+\_\+reshape\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_linear_affb0e56f0ca748a62e4aa5ce5733b491}\label{class_linear_affb0e56f0ca748a62e4aa5ce5733b491}} 
+\index{Linear$<$ T $>$@{Linear$<$ T $>$}!out\_dims\_@{out\_dims\_}}
+\index{out\_dims\_@{out\_dims\_}!Linear$<$ T $>$@{Linear$<$ T $>$}}
+\subsubsection{\texorpdfstring{out\_dims\_}{out\_dims\_}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+size\+\_\+t \mbox{\hyperlink{class_linear}{Linear}}$<$ T $>$\+::out\+\_\+dims\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+layer/\mbox{\hyperlink{linear_8hpp}{linear.\+hpp}}\item 
+layer/\mbox{\hyperlink{linear__impl_8hpp}{linear\+\_\+impl.\+hpp}}\end{DoxyCompactItemize}
