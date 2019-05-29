@@ -25,6 +25,15 @@ Network<T>& Network<T>::operator<<(Loss<T>& loss) {
 }
 
 template <typename T>
+xt::xarray<T> Network<T>::predict(const xt::xarray<T>& in) {
+  Matrix out = in;
+  for (auto& layer : layers_) {
+    out = layer->forward(out);
+  }
+  return out;
+}
+
+template <typename T>
 xt::xarray<T> Network<T>::forward(const xt::xarray<T>& in,
                                   const xt::xarray<T>& target) {
   Matrix out = in;

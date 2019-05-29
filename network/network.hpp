@@ -27,6 +27,7 @@ public:
   virtual Optimizer<T>* get_optimizer() { return optimizer_; };
   virtual void set_optimizer(Optimizer<T>* opt) { optimizer_ = opt; };
 
+  virtual Matrix predict(const Matrix& in);
   virtual Matrix forward(const Matrix& in, const Matrix& target);
   virtual void backward();
 

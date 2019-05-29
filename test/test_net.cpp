@@ -1,11 +1,6 @@
 #include "network.hpp"
 using namespace std;
 
-template <typename Layer>
-Layer& make(Layer&& temp) {
-  return temp;
-}
-
 int main(int argc, char** argv) {
   Network<double> net;
   auto input = xt::linspace<double>(-0.5, 0.5, 18).reshape({2, 1, 3, 3});

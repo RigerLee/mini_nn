@@ -16,7 +16,7 @@ public:
          size_t out_channels,
          size_t kernel_size = 3,
          size_t stride = 1,
-         size_t padding = 1);
+         size_t padding = 0);
 
   virtual Matrix forward(const Matrix& in) override;
   virtual Matrix backward(const Matrix& dout) override;
