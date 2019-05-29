@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.21)  30 MAY 2019 04:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.21)  30 MAY 2019 04:37
 entering extended mode
 **./refman.tex
 (refman.tex
@@ -1822,4 +1822,66 @@ e 8.
 ) (convolution_8hpp.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38]
+ [38] <./convolution_8hpp__incl.pdf>
+<convolution_8hpp__incl.pdf, id=1096, 1282.7925pt x 606.265pt>
+File: convolution_8hpp__incl.pdf Graphic file (type pdf)
+
+<use convolution_8hpp__incl.pdf>
+Package pdftex.def Info: convolution_8hpp__incl.pdf used on input line 11.
+(pdftex.def)             Requested size: 350.0pt x 165.41438pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39] <./convolution_8hpp__dep__incl.pdf>
+<convolution_8hpp__dep__incl.pdf, id=1112, 453.695pt x 325.215pt>
+File: convolution_8hpp__dep__incl.pdf Graphic file (type pdf)
+
+<use convolution_8hpp__dep__incl.pdf>
+Package pdftex.def Info: convolution_8hpp__dep__incl.pdf used on input line 19.
+
+(pdftex.def)             Requested size: 350.0pt x 250.88774pt.
+) (convolution__impl_8hpp.tex <./convolution__impl_8hpp__incl.pdf
+
+pdfTeX warning: pdflatex (file ./convolution__impl_8hpp__incl.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <convolution__impl_8hpp__incl.pdf, id=1122, 1282.7925pt x 550.055pt>
+File: convolution__impl_8hpp__incl.pdf Graphic file (type pdf)
+
+<use convolution__impl_8hpp__incl.pdf>
+Package pdftex.def Info: convolution__impl_8hpp__incl.pdf used on input line 9.
+
+(pdftex.def)             Requested size: 350.0pt x 150.07796pt.
+ [40] <./convolution__impl_8hpp__dep__incl.pdf>
+<convolution__impl_8hpp__dep__incl.pdf, id=1140, 368.37625pt x 381.425pt>
+File: convolution__impl_8hpp__dep__incl.pdf Graphic file (type pdf)
+
+<use convolution__impl_8hpp__dep__incl.pdf>
+Package pdftex.def Info: convolution__impl_8hpp__dep__incl.pdf used on input li
+ne 17.
+(pdftex.def)             Requested size: 350.0pt x 362.39243pt.
+) (layer__base_8hpp.tex <./layer__base_8hpp__incl.pdf
+
+pdfTeX warning: pdflatex (file ./layer__base_8hpp__incl.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+> <layer__base_8hpp__incl.pdf, id=1149, 1282.7925pt x 269.005pt>
+File: layer__base_8hpp__incl.pdf Graphic file (type pdf)
+
+<use layer__base_8hpp__incl.pdf>
+Package pdftex.def Info: layer__base_8hpp__incl.pdf used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 73.39578pt.
+ [41] <./layer__base_8hpp__dep__incl.pdf>
+<layer__base_8hpp__dep__incl.pdf, id=1167, 697.60625pt x 493.845pt>
+File: layer__base_8hpp__dep__incl.pdf Graphic file (type pdf)
+
+<use layer__base_8hpp__dep__incl.pdf>
+Package pdftex.def Info: layer__base_8hpp__dep__incl.pdf used on input line 18.
+
+(pdftex.def)             Requested size: 350.0pt x 247.77339pt.
+
+! Extra }, or forgotten \endgroup.
+<recently read> \egroup 
+                        
+l.63 \end{DoxyEnumFields}
+                         
+
+? 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['relu',['ReLU',['../class_re_l_u.html#ad378d979e537b8af65513b3cb9bfe2b1',1,'ReLU']]]
+  ['predict',['predict',['../class_network.html#a7359736e7e47ad98b4946b1b719c1c30',1,'Network']]]
 ];

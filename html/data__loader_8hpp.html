@@ -72,22 +72,25 @@ $(function() {
 <div class="title">data_loader.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
+
+<p><a class="el" href="data__loader_8hpp.html" title="data_loader.hpp">data_loader.hpp</a>  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;xtensor-io/ximage.hpp&quot;</code><br />
 <code>#include &quot;xtensor/xarray.hpp&quot;</code><br />
 <code>#include &quot;xtensor/xio.hpp&quot;</code><br />
-<code>#include &quot;xtensor-io/ximage.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for data_loader.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="data__loader_8hpp__incl.png" border="0" usemap="#loader_2data__loader_8hpp" alt=""/></div>
 <map name="loader_2data__loader_8hpp" id="loader_2data__loader_8hpp">
-<area shape="rect"  title=" " alt="" coords="154,5,307,32"/>
-<area shape="rect"  title=" " alt="" coords="5,80,61,107"/>
-<area shape="rect"  title=" " alt="" coords="86,80,141,107"/>
-<area shape="rect"  title=" " alt="" coords="165,80,296,107"/>
-<area shape="rect"  title=" " alt="" coords="321,80,431,107"/>
-<area shape="rect"  title=" " alt="" coords="455,80,606,107"/>
+<area shape="rect"  title="data_loader.hpp" alt="" coords="164,5,317,32"/>
+<area shape="rect"  title=" " alt="" coords="5,80,60,107"/>
+<area shape="rect"  title=" " alt="" coords="85,80,141,107"/>
+<area shape="rect"  title=" " alt="" coords="165,80,316,107"/>
+<area shape="rect"  title=" " alt="" coords="341,80,471,107"/>
+<area shape="rect"  title=" " alt="" coords="496,80,607,107"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -95,7 +98,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="data__loader_8hpp__dep__incl.png" border="0" usemap="#loader_2data__loader_8hppdep" alt=""/></div>
 <map name="loader_2data__loader_8hppdep" id="loader_2data__loader_8hppdep">
-<area shape="rect"  title=" " alt="" coords="5,5,159,32"/>
+<area shape="rect"  title="data_loader.hpp" alt="" coords="5,5,159,32"/>
 <area shape="rect"  href="test__loader_8cpp.html" title=" " alt="" coords="13,80,151,107"/>
 </map>
 </div>
@@ -104,13 +107,55 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a88f0404d92cf06b26817c6b9391a0262"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a88f0404d92cf06b26817c6b9391a0262"><td class="memTemplItemLeft" align="right" valign="top">xt::xarray&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="data__loader_8hpp.html#a88f0404d92cf06b26817c6b9391a0262">load_images</a> (const std::vector&lt; std::string &gt; &amp;paths)</td></tr>
-<tr class="separator:a88f0404d92cf06b26817c6b9391a0262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce8c8695120e4352452f599d57bb87e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a6ce8c8695120e4352452f599d57bb87e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="data__loader_8hpp.html#a6ce8c8695120e4352452f599d57bb87e">image_normalize</a> (xt::xarray&lt; T &gt; &amp;image, const xt::xarray&lt; T &gt; &amp;mean, const xt::xarray&lt; T &gt; &amp;std_)</td></tr>
+<tr class="separator:a6ce8c8695120e4352452f599d57bb87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76d30d8ab62a3cf2b44a93304cd27557"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a76d30d8ab62a3cf2b44a93304cd27557"><td class="memTemplItemLeft" align="right" valign="top">xt::xarray&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="data__loader_8hpp.html#a76d30d8ab62a3cf2b44a93304cd27557">load_images</a> (const std::vector&lt; std::string &gt; &amp;paths, const xt::xarray&lt; T &gt; &amp;mean, const xt::xarray&lt; T &gt; &amp;std)</td></tr>
+<tr class="separator:a76d30d8ab62a3cf2b44a93304cd27557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a88f0404d92cf06b26817c6b9391a0262"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88f0404d92cf06b26817c6b9391a0262">&#9670;&nbsp;</a></span>load_images()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="data__loader_8hpp.html" title="data_loader.hpp">data_loader.hpp</a> </p>
+<p>head file </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a6ce8c8695120e4352452f599d57bb87e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ce8c8695120e4352452f599d57bb87e">&#9670;&nbsp;</a></span>image_normalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void image_normalize </td>
+          <td>(</td>
+          <td class="paramtype">xt::xarray&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const xt::xarray&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mean</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const xt::xarray&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>std_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76d30d8ab62a3cf2b44a93304cd27557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76d30d8ab62a3cf2b44a93304cd27557">&#9670;&nbsp;</a></span>load_images()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -121,8 +166,24 @@ template&lt;typename T &gt; </div>
           <td class="memname">xt::xarray&lt;T&gt; load_images </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
-          <td class="paramname"><em>paths</em></td><td>)</td>
+          <td class="paramname"><em>paths</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const xt::xarray&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mean</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const xt::xarray&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>std</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

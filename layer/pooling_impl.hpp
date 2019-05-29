@@ -1,3 +1,15 @@
+/**
+ * @file pooling_impl.hpp
+ * @brief pooling_impl.hpp
+ * @details head file
+ * @mainpage mini_nn
+ * @author RuiJian Li, YiFan Cao, YanPeng Hu
+ * @email lirj@shanghaitech.edu.cn,
+ * caoyf@shanghaitech.edu.cn,huyp@shanghaitech.edu.cn
+ * @version 1.6.0
+ * @date 2019-05-26
+ */
+
 template <typename T>
 MaxPool2d<T>::MaxPool2d(size_t kernel_size, size_t stride, size_t padding) {
   this->layer_type_ = POOL;

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['image_5fnormalize',['image_normalize',['../data__loader_8hpp.html#a6ce8c8695120e4352452f599d57bb87e',1,'data_loader.hpp']]],
   ['in_5f',['in_',['../class_layer.html#a9482c992e218f5da65c4345be1dd7447',1,'Layer']]],
   ['in_5fchannels_5f',['in_channels_',['../class_conv2d.html#afdb638e506f642d24a8d22fb8c2a821a',1,'Conv2d']]],
   ['in_5fdims_5f',['in_dims_',['../class_linear.html#ae15dad7b24bbc705da10f6896188ab13',1,'Linear']]],

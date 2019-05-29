@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['main',['main',['../test__layer_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;test_layer.cpp'],['../test__loader_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;test_loader.cpp'],['../test__net_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;test_net.cpp']]],
-  ['maxpool2d',['MaxPool2d',['../class_max_pool2d.html#adf1b59faff18335a4d8b7cdc9d9acad6',1,'MaxPool2d::MaxPool2d()=default'],['../class_max_pool2d.html#a5cfd5c6ae11f49fffb3d4a68f261f013',1,'MaxPool2d::MaxPool2d(size_t kernel_size, size_t stride=0, size_t padding=0)']]]
+  ['layer',['Layer',['../class_layer.html#a7db1fc76bec3431efbb0984192e2ae23',1,'Layer']]],
+  ['linear',['Linear',['../class_linear.html#a905089a6472d97cc8b1d201fdd3deef9',1,'Linear::Linear()=default'],['../class_linear.html#a335a168705982b1dbf9c16b89465995e',1,'Linear::Linear(size_t in_dims, size_t out_dims)']]],
+  ['load_5fimages',['load_images',['../data__loader_8hpp.html#a76d30d8ab62a3cf2b44a93304cd27557',1,'data_loader.hpp']]],
+  ['loss',['Loss',['../class_loss.html#a76394ddc3da09eb5d4929e1ea03a667c',1,'Loss::Loss()'],['../class_loss.html#a5b75c55ce90781d1b12d02f1bedbfa4f',1,'Loss::Loss(LOSS_TYPE loss_type)']]]
 ];

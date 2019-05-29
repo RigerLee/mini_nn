@@ -1,3 +1,15 @@
+/**
+ * @file convolution_impl.hpp
+ * @brief convolution_impl.hpp
+ * @details head file
+ * @mainpage mini_nn
+ * @author RuiJian Li, YiFan Cao, YanPeng Hu
+ * @email lirj@shanghaitech.edu.cn,
+ * caoyf@shanghaitech.edu.cn,huyp@shanghaitech.edu.cn
+ * @version 1.6.0
+ * @date 2019-05-26
+ */
+
 #include <network.hpp>
 
 template <typename T>

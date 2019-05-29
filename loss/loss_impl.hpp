@@ -1,3 +1,15 @@
+/**
+ * @file loss_impl.hpp
+ * @brief loss_impl.hpp
+ * @details head file
+ * @mainpage mini_nn
+ * @author RuiJian Li, YiFan Cao, YanPeng Hu
+ * @email lirj@shanghaitech.edu.cn,
+ * caoyf@shanghaitech.edu.cn,huyp@shanghaitech.edu.cn
+ * @version 1.6.0
+ * @date 2019-05-26
+ */
+
 template <typename T>
 Loss<T>::Loss() {
   // default use CROSS_ENTROPY

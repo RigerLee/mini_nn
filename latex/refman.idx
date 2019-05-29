@@ -201,4 +201,16 @@
 \indexentry{Shape@{Shape}!SGD$<$ T $>$@{SGD$<$ T $>$}|hyperpage}{35}
 \indexentry{SGD$<$ T $>$@{SGD$<$ T $>$}!SGD@{SGD}|hyperpage}{35}
 \indexentry{SGD@{SGD}!SGD$<$ T $>$@{SGD$<$ T $>$}|hyperpage}{35}
-\indexen
+\indexentry{SGD$<$ T $>$@{SGD$<$ T $>$}!````~SGD@{$\sim$SGD}|hyperpage}{35}
+\indexentry{````~SGD@{$\sim$SGD}!SGD$<$ T $>$@{SGD$<$ T $>$}|hyperpage}{35}
+\indexentry{SGD$<$ T $>$@{SGD$<$ T $>$}!update@{update}|hyperpage}{36}
+\indexentry{update@{update}!SGD$<$ T $>$@{SGD$<$ T $>$}|hyperpage}{36}
+\indexentry{SGD$<$ T $>$@{SGD$<$ T $>$}!momentum\_@{momentum\_}|hyperpage}{36}
+\indexentry{momentum\_@{momentum\_}!SGD$<$ T $>$@{SGD$<$ T $>$}|hyperpage}{36}
+\indexentry{SGD$<$ T $>$@{SGD$<$ T $>$}!weight\_decay\_@{weight\_decay\_}|hyperpage}{36}
+\indexentry{weight\_decay\_@{weight\_decay\_}!SGD$<$ T $>$@{SGD$<$ T $>$}|hyperpage}{36}
+\indexentry{layer/activation.hpp@{layer/activation.hpp}|hyperpage}{37}
+\indexentry{layer/activation\_impl.hpp@{layer/activation\_impl.hpp}|hyperpage}{39}
+\indexentry{layer/convolution.hpp@{layer/convolution.hpp}|hyperpage}{39}
+\indexentry{layer/convolution\_impl.hpp@{layer/convolution\_impl.hpp}|hyperpage}{40}
+\indexentry{layer/layer\_base.hpp@{layer/layer\_base.hpp}|hyperpage}{41}
