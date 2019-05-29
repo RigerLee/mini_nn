@@ -10,9 +10,10 @@ xt::xarray<T> load_images(const std::vector<std::string>& paths) {
   xt::xarray<T> result {};
   bool not_reshaped = true;
   for (auto& path : paths) {
-    xt::xarray<T> image = {xt::transpose(load_image(path), {2, 0, 1})};
+    xt::xarray<T> image = xt::transpose(load_image(path), {2, 0, 1});
+    auto shape = image.shape();
+    image.reshape({1, shape[0], shape[1], shape[2]});
     if (not_reshaped) {
-      auto shape = image.shape();
       result.reshape({0, shape[0], shape[1], shape[2]});
       not_reshaped = false;
     }
