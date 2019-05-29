@@ -3,6 +3,7 @@
 #include <math.h>
 #include <iostream>
 #include "xtensor-blas/xlinalg.hpp"
+#include "xtensor/xadapt.hpp"
 #include "xtensor/xarray.hpp"
 #include "xtensor/xindex_view.hpp"
 #include "xtensor/xio.hpp"

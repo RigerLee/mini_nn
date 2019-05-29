@@ -1,3 +1,4 @@
+#include <network.hpp>
 
 template <typename T>
 Conv2d<T>::Conv2d(size_t in_channels,
@@ -19,6 +20,7 @@ Conv2d<T>::Conv2d(size_t in_channels,
   this->b_ = xt::zeros<T>(b_shape);  // Matrix(b_shape);
   this->dW_ = Matrix(W_shape);
   this->db_ = Matrix(b_shape);
+  this->net_ = nullptr;
   kaiming_normal(*this, "ReLU");
 }
 
@@ -116,8 +118,11 @@ xt::xarray<T> Conv2d<T>::backward(const xt::xarray<T>& dout) {
     xt::view(din_pad, xt::all(), xt::all(),
              xt::range(this->padding_, din_pad.shape(2) - this->padding_),
              xt::range(this->padding_, din_pad.shape(3) - this->padding_));
-  this->net_->get_optimizer()->update(this->W_, this->dW_);
-  this->net_->get_optimizer()->update(this->b_, this->db_);
+  // only update if net is already set
+  if (this->net_) {
+    this->net_->get_optimizer()->update(this->W_, this->dW_);
+    this->net_->get_optimizer()->update(this->b_, this->db_);
+  }
 
   return this->din_;
 }

@@ -11,8 +11,8 @@ void kaiming_normal(Layer<T>& layer, std::string mode = "ReLU") {
   // ReLU or LeakyReLU
   T a = mode == "ReLU" ? 0.0 : 0.01;
   T std = sqrt(2.0 / ((1 + pow(a, 2)) * fan_in));
-  xt::xarray<T> weight = xt::random::randn(layer.weight_shape(), 0., std);
-  xt::xarray<T> bias = xt::random::randn(layer.bias_shape(), 0., std);
+  xt::xarray<T> weight = xt::random::randn(layer.weight_shape(), (T)0., std);
+  xt::xarray<T> bias = xt::random::randn(layer.bias_shape(), (T)0., std);
   layer.set_weight(weight);
   layer.set_bias(bias);
 }
