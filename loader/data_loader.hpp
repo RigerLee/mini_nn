@@ -2,15 +2,17 @@
 
 #include <vector>
 #include <string>
-#include "common_header.hpp"
+#include "xtensor/xarray.hpp"
+#include "xtensor/xio.hpp"
 #include "xtensor-io/ximage.hpp"
 
 template <typename T>
 xt::xarray<T> load_images(const std::vector<std::string>& paths) {
-  xt::xarray<T> result {};
+  typename xt::xarray<T>::shape_type rshape = {0};
+  xt::xarray<T> result (rshape);
   bool not_reshaped = true;
   for (auto& path : paths) {
-    xt::xarray<T> image = xt::transpose(load_image(path), {2, 0, 1});
+    xt::xarray<T> image = xt::transpose(xt::load_image(path), {2, 0, 1});
     auto shape = image.shape();
     image.reshape({1, shape[0], shape[1], shape[2]});
     if (not_reshaped) {

@@ -10,4 +10,9 @@ add_executable(
   test_net.cpp
 )
 
+add_executable(
+        Test_Loader
+        test_loader.cpp)
+
 target_link_libraries(Test_Net ${BLAS_LIBRARIES} ${LAPACK_LIBRARIES})
+target_link_libraries(Test_Loader ${BLAS_LIBRARIES} ${LAPACK_LIBRARIES} ${OIIO})
