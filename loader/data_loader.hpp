@@ -9,19 +9,19 @@
 template <typename T>
 void image_normalize(xt::xarray<T>& image,
                      const xt::xarray<T>& mean,
-                     const xt::xarray<T>& std) {
+                     const xt::xarray<T>& std_) {
   auto shape = image.shape();
   size_t C = shape[0];
   size_t H = shape[1];
   size_t W = shape[2];
-  if (C != mean.size() || C != std.size())
+  if (C != mean.size() || C != std_.size())
     throw std::runtime_error("invalid number of channels");
   for (size_t c = 0; c < C; ++c) {
     T mean_c = mean(c);
-    T std_c = std(c);
+    T std_c = std_(c);
     auto begin = image.begin() + c * H * W;
     std::transform(begin, begin + H * W, begin,
-                   [=](T&& v) { return (v - mean_c) / std_c; });
+                   [=](auto&& v) { return (v - mean_c) / std_c; });
   }
 }
 
