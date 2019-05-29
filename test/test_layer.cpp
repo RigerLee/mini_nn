@@ -1,10 +1,10 @@
-#include <iostream>
 #include "activation.hpp"
 #include "convolution.hpp"
 #include "linear.hpp"
 #include "pooling.hpp"
+#include <iostream>
 
-int main(int argc, char** argv) {
+int main(int argc, char **argv) {
   {
     std::cout << "--------------Test Conv2d start------------" << std::endl;
     Conv2d<double> test(3, 3, 3, 2, 1);
