@@ -2,11 +2,17 @@
 \label{class_s_g_d}\index{SGD$<$ T $>$@{SGD$<$ T $>$}}
 
 
+Stochastic gradient descent.  
+
+
+
+
 {\ttfamily \#include $<$optimizer.\+hpp$>$}
 
 
 
-Inheritance diagram for S\+GD$<$ T $>$\+:\nopagebreak
+Inheritance diagram for S\+GD$<$ T $>$\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -15,7 +21,8 @@ Inheritance diagram for S\+GD$<$ T $>$\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for S\+GD$<$ T $>$\+:\nopagebreak
+Collaboration diagram for S\+GD$<$ T $>$\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -33,11 +40,11 @@ typedef Matrix\+::shape\+\_\+type \mbox{\hyperlink{class_s_g_d_a3275687cc77c8557
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_s_g_d_ab5164133117de1bdba4c735dfa535749}{S\+GD}} (T lr=0.\+1, T momentum=1., T weight\+\_\+decay=0.)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_s_g_d}{S\+GD}} object. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_s_g_d_a67a8d9c380b94c86158ab1709b752e1a}{$\sim$\+S\+GD}} ()=default
-\item 
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_s_g_d}{S\+GD}} object. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_s_g_d_a0345cfa977a251c576096ea6a098230f}{update}} (\mbox{\hyperlink{class_s_g_d_a0c157dbad2dc900c00b9ca57f23ba676}{Matrix}} \&target, const \mbox{\hyperlink{class_s_g_d_a0c157dbad2dc900c00b9ca57f23ba676}{Matrix}} \&grad) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em update the network \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -46,6 +53,37 @@ T \mbox{\hyperlink{class_s_g_d_abc4dc58d224e921bc278508f5edfe1bd}{momentum\+\_\+
 T \mbox{\hyperlink{class_s_g_d_ae34e45e15ff22ca62ee0d61104da2ff7}{weight\+\_\+decay\+\_\+}}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class S\+G\+D$<$ T $>$}
+
+Stochastic gradient descent. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+Stochastic gradient descent (often abbreviated \mbox{\hyperlink{class_s_g_d}{S\+GD}}) is an iterative method for optimizing an objective function with suitable smoothness properties (e.\+g. differentiable or subdifferentiable). It is called stochastic because the method uses randomly selected (or shuffled) samples to evaluate the gradients, hence \mbox{\hyperlink{class_s_g_d}{S\+GD}} can be regarded as a stochastic approximation of gradient descent optimization. The ideas can be traced back\mbox{[}1\mbox{]} at least to the 1951 article titled \char`\"{}\+A Stochastic Approximation Method\char`\"{} by Herbert Robbins and Sutton Monro, who proposed with detailed analysis a root-\/finding method now called the Robbins-\/\+Monro algorithm .
+
+Both statistical estimation and machine learning consider the problem of minimizing an objective function that has the form of a sum\+:
+
+\{\textbackslash{}displaystyle Q(w)=\{\textbackslash{}frac \{1\}\{n\}\}\textbackslash{}sum \+\_\+\{i=1\}$^\wedge$\{n\}Q\+\_\+\{i\}(w),\} \{\textbackslash{}displaystyle Q(w)=\{\textbackslash{}frac \{1\}\{n\}\}\textbackslash{}sum \+\_\+\{i=1\}$^\wedge$\{n\}Q\+\_\+\{i\}(w),\} where the parameter \{\textbackslash{}displaystyle w\} w that minimizes \{\textbackslash{}displaystyle Q(w)\} Q(w) is to be estimated. Each summand function \{\textbackslash{}displaystyle Q\+\_\+\{i\}\} Q\+\_\+\{i\} is typically associated with the \{\textbackslash{}displaystyle i\} i-\/th observation in the data set (used for training).
+
+In classical statistics, sum-\/minimization problems arise in least squares and in maximum-\/likelihood estimation (for independent observations). The general class of estimators that arise as minimizers of sums are called M-\/estimators. However, in statistics, it has been long recognized that requiring even local minimization is too restrictive for some problems of maximum-\/likelihood estimation.\mbox{[}2\mbox{]} Therefore, contemporary statistical theorists often consider stationary points of the likelihood function (or zeros of its derivative, the score function, and other estimating equations).
+
+The sum-\/minimization problem also arises for empirical risk minimization. In this case, \{\textbackslash{}displaystyle Q\+\_\+\{i\}(w)\} Q\+\_\+\{i\}(w) is the value of the loss function at \{\textbackslash{}displaystyle i\} i-\/th example, and \{\textbackslash{}displaystyle Q(w)\} Q(w) is the empirical risk.
+
+When used to minimize the above function, a standard (or \char`\"{}batch\char`\"{}) gradient descent method would perform the following iterations \+:
+
+\{\textbackslash{}displaystyle w\+:=w-\/\textbackslash{}eta \textbackslash{}nabla Q(w)=w-\/\textbackslash{}eta \textbackslash{}sum \+\_\+\{i=1\}$^\wedge$\{n\}\textbackslash{}nabla Q\+\_\+\{i\}(w)/n,\} \{\textbackslash{}displaystyle w\+:=w-\/\textbackslash{}eta \textbackslash{}nabla Q(w)=w-\/\textbackslash{}eta \textbackslash{}sum \+\_\+\{i=1\}$^\wedge$\{n\}\textbackslash{}nabla Q\+\_\+\{i\}(w)/n,\} where \{\textbackslash{}displaystyle \textbackslash{}eta \} \textbackslash{}eta is a step size (sometimes called the learning rate in machine learning).
+
+In many cases, the summand functions have a simple form that enables inexpensive evaluations of the sum-\/function and the sum gradient. For example, in statistics, one-\/parameter exponential families allow economical function-\/evaluations and gradient-\/evaluations.
+
+However, in other cases, evaluating the sum-\/gradient may require expensive evaluations of the gradients from all summand functions. When the training set is enormous and no simple formulas exist, evaluating the sums of gradients becomes very expensive, because evaluating the gradient requires evaluating all the summand functions\textquotesingle{} gradients. To economize on the computational cost at every iteration, stochastic gradient descent samples a subset of summand functions at every step. This is very effective in the case of large-\/scale machine learning problems.\mbox{[}3\mbox{]}
+
+Iterative method 
 
 \subsection{Member Typedef Documentation}
 \mbox{\Hypertarget{class_s_g_d_a0c157dbad2dc900c00b9ca57f23ba676}\label{class_s_g_d_a0c157dbad2dc900c00b9ca57f23ba676}} 
@@ -72,12 +110,29 @@ typedef Matrix\+::shape\+\_\+type \mbox{\hyperlink{class_s_g_d}{S\+GD}}$<$ T $>$
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 \mbox{\hyperlink{class_s_g_d}{S\+GD}}$<$ T $>$\+::\mbox{\hyperlink{class_s_g_d}{S\+GD}} (\begin{DoxyParamCaption}\item[{T}]{lr = {\ttfamily 0.1},  }\item[{T}]{momentum = {\ttfamily 1.},  }\item[{T}]{weight\+\_\+decay = {\ttfamily 0.} }\end{DoxyParamCaption})}
 
+
+
+Construct a new \mbox{\hyperlink{class_s_g_d}{S\+GD}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lr} & init with 0. \\
+\hline
+{\em momentum} & init with 1 \\
+\hline
+{\em weight\+\_\+decay} & default is 0 \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_s_g_d_a67a8d9c380b94c86158ab1709b752e1a}\label{class_s_g_d_a67a8d9c380b94c86158ab1709b752e1a}} 
 \index{SGD$<$ T $>$@{SGD$<$ T $>$}!````~SGD@{$\sim$SGD}}
 \index{````~SGD@{$\sim$SGD}!SGD$<$ T $>$@{SGD$<$ T $>$}}
 \subsubsection{\texorpdfstring{$\sim$SGD()}{~SGD()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 virtual \mbox{\hyperlink{class_s_g_d}{S\+GD}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_s_g_d}{S\+GD}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destroy the \mbox{\hyperlink{class_s_g_d}{S\+GD}} object. 
 
 
 
@@ -89,6 +144,17 @@ virtual \mbox{\hyperlink{class_s_g_d}{S\+GD}}$<$ T $>$\+::$\sim$\mbox{\hyperlink
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 void \mbox{\hyperlink{class_s_g_d}{S\+GD}}$<$ T $>$\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_s_g_d_a0c157dbad2dc900c00b9ca57f23ba676}{Matrix}} \&}]{target,  }\item[{const \mbox{\hyperlink{class_s_g_d_a0c157dbad2dc900c00b9ca57f23ba676}{Matrix}} \&}]{grad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+update the network 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+{\em grad} & \\
+\hline
+\end{DoxyParams}
 
 
 Implements \mbox{\hyperlink{class_optimizer_a3f4859896cf9edab31b3875af7aad0cd}{Optimizer$<$ T $>$}}.

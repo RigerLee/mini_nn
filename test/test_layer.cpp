@@ -1,9 +1,25 @@
+/**
+ * @file test_layer.cpp
+ * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
+ * @brief the test for the layer to see the layer whether works out or not. 
+ * @version 1.6.0
+ * @date 2019-05-30
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 #include "activation.hpp"
 #include "convolution.hpp"
 #include "linear.hpp"
 #include "pooling.hpp"
 #include <iostream>
-
+/**
+ * @brief 
+ * 
+ * @param argc 
+ * @param argv 
+ * @return int 
+ */
 int main(int argc, char **argv) {
   {
     std::cout << "--------------Test Conv2d start------------" << std::endl;

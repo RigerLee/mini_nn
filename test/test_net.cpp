@@ -1,3 +1,13 @@
+/**
+ * @file test_net.cpp
+ * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
+ * @brief to test net function whether works out or not
+ * @version 1.6.0
+ * @date 2019-05-30
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 #include "network.hpp"
 using namespace std;
 
