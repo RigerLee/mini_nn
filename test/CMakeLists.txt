@@ -16,4 +16,4 @@ add_executable(
 )
 
 target_link_libraries(Test_Net ${BLAS_LIBRARIES} ${LAPACK_LIBRARIES})
-target_link_libraries(Test_Loader ${OIIO})
+target_link_libraries(Test_Loader ${BLAS_LIBRARIES} ${LAPACK_LIBRARIES} ${OIIO})
