@@ -1,7 +1,22 @@
+/**
+ * @file utils.hpp
+ * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
+ * @brief 
+ * @version 1.6.0
+ * @date 2019-05-30
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 #pragma once
 
 #include <common_header.hpp>
-
+/**
+ * @brief 
+ * 
+ * @tparam T 
+ * @param matrix 
+ */
 template <typename T>
 void cout_shape(const xt::xarray<T>& matrix) {
   std::cout << "shape: [";

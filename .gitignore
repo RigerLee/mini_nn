@@ -7,3 +7,6 @@ doxygen/
 .idea/
 cmake-build-debug/
 cmake-build-release/
+
+latex/
+html/

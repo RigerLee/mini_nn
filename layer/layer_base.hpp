@@ -48,14 +48,14 @@ public:
   /**
    * @brief forward function in the network
    * 
-   * @param in 
+   * @param the input of the network
    * @return Matrix 
    */
   virtual Matrix forward(const Matrix& in) = 0;
   /**
    * @brief backward function in the networ
    *
-   * @param dout
+   * @param dout Derivative 
    * @return Matrix
    */
   virtual Matrix backward(const Matrix& dout) = 0;

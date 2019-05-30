@@ -1,13 +1,12 @@
 /**
  * @file data_loader.hpp
- * @brief data_loader.hpp
- * @details head file
- * @mainpage mini_nn
- * @author RuiJian Li, YiFan Cao, YanPeng Hu
- * @email lirj@shanghaitech.edu.cn,
- * caoyf@shanghaitech.edu.cn,huyp@shanghaitech.edu.cn
+ * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
+ * @brief 
  * @version 1.6.0
- * @date 2019-05-26
+ * @date 2019-05-30
+ * 
+ * @copyright Copyright (c) 2019
+ * 
  */
 
 #pragma once
@@ -18,7 +17,11 @@
 #include <sys/time.h>
 #include "common_header.hpp"
 #include "utils.hpp"
-
+/**
+ * @brief 
+ * 
+ * @tparam T 
+ */
 template <typename T>
 class Dataset {
 public:
