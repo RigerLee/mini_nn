@@ -1,9 +1,9 @@
 <map id="network/init.hpp" name="network/init.hpp">
 <area shape="rect" id="node1" title="Init the network. Containing two funcitons: kaiming_normal and kaiming_uniform." alt="" coords="993,5,1107,32"/>
-<area shape="rect" id="node2" href="$convolution_8hpp.html" title="convolution.hpp" alt="" coords="943,80,1053,107"/>
+<area shape="rect" id="node2" href="$convolution_8hpp.html" title=" " alt="" coords="943,80,1053,107"/>
 <area shape="rect" id="node22" href="$linear_8hpp.html" title="linear.hpp" alt="" coords="1064,304,1143,331"/>
-<area shape="rect" id="node3" href="$layer__base_8hpp.html" title="layer_base.hpp" alt="" coords="971,379,1081,405"/>
-<area shape="rect" id="node17" href="$convolution__impl_8hpp.html" title="convolution_impl.hpp" alt="" coords="836,155,979,181"/>
+<area shape="rect" id="node3" href="$layer__base_8hpp.html" title=" " alt="" coords="971,379,1081,405"/>
+<area shape="rect" id="node17" href="$convolution__impl_8hpp.html" title="implementation for the convolution" alt="" coords="836,155,979,181"/>
 <area shape="rect" id="node4" href="$common__header_8hpp.html" title=" " alt="" coords="695,528,837,555"/>
 <area shape="rect" id="node16" href="$utils_8hpp.html" title=" " alt="" coords="964,453,1035,480"/>
 <area shape="rect" id="node5" title=" " alt="" coords="5,603,68,629"/>

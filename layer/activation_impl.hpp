@@ -37,7 +37,7 @@ template <typename T> ReLU<T>::ReLU() { this->layer_type_ = ACT; }
  * @brief forward function
  *
  * @tparam T
- * @param in
+ * @param in the input 
  * @return xt::xarray<T>
  */
 template <typename T> xt::xarray<T> ReLU<T>::forward(const xt::xarray<T> &in) {
@@ -47,10 +47,10 @@ template <typename T> xt::xarray<T> ReLU<T>::forward(const xt::xarray<T> &in) {
 }
 
 /**
- * @brief
+ * @brief backward function in the network
  *
  * @tparam T
- * @param dout
+ * @param dout 
  * @return xt::xarray<T>
  */
 template <typename T>

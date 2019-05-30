@@ -1,16 +1,16 @@
 <map id="network/common_header.hpp" name="network/common_header.hpp">
 <area shape="rect" id="node1" title=" " alt="" coords="369,5,561,32"/>
-<area shape="rect" id="node2" href="$layer__base_8hpp.html" title="layer_base.hpp" alt="" coords="249,169,391,196"/>
+<area shape="rect" id="node2" href="$layer__base_8hpp.html" title=" " alt="" coords="249,169,391,196"/>
 <area shape="rect" id="node13" href="$loss_8hpp.html" title=" " alt="" coords="465,169,564,196"/>
 <area shape="rect" id="node14" href="$utils_8hpp.html" title=" " alt="" coords="357,87,477,114"/>
 <area shape="rect" id="node15" href="$optimizer__base_8hpp.html" title=" " alt="" coords="555,80,687,121"/>
 <area shape="rect" id="node3" href="$activation_8hpp.html" title=" " alt="" coords="149,244,283,271"/>
-<area shape="rect" id="node6" href="$convolution_8hpp.html" title="convolution.hpp" alt="" coords="417,468,559,495"/>
+<area shape="rect" id="node6" href="$convolution_8hpp.html" title=" " alt="" coords="417,468,559,495"/>
 <area shape="rect" id="node8" href="$linear_8hpp.html" title="linear.hpp" alt="" coords="433,617,543,644"/>
 <area shape="rect" id="node12" href="$pooling_8hpp.html" title="pooling.hpp" alt="" coords="5,244,125,271"/>
 <area shape="rect" id="node4" href="$network_8hpp.html" title=" " alt="" coords="560,319,701,345"/>
 <area shape="rect" id="node9" href="$test__layer_8cpp.html" title=" " alt="" coords="261,692,392,719"/>
-<area shape="rect" id="node5" href="$convolution__impl_8hpp.html" title="convolution_impl.hpp" alt="" coords="409,393,583,420"/>
+<area shape="rect" id="node5" href="$convolution__impl_8hpp.html" title="implementation for the convolution" alt="" coords="409,393,583,420"/>
 <area shape="rect" id="node10" href="$linear__impl_8hpp.html" title="linear_impl.hpp" alt="" coords="625,468,767,495"/>
 <area shape="rect" id="node11" href="$test__net_8cpp.html" title=" " alt="" coords="608,393,728,420"/>
 <area shape="rect" id="node7" href="$init_8hpp.html" title="Init the network. Containing two funcitons: kaiming_normal and kaiming_uniform." alt="" coords="431,543,545,569"/>

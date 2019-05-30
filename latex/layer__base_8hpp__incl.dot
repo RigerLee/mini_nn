@@ -1,0 +1,34 @@
+digraph "layer/layer_base.hpp"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="layer/layer_base.hpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 [label="common_header.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$common__header_8hpp.html",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="math.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="iostream",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="xtensor-blas/xlinalg.hpp",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="xtensor/xadapt.hpp",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="xtensor/xarray.hpp",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="xtensor/xindex_view.hpp",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="xtensor/xio.hpp",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="xtensor/xmath.hpp",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="xtensor/xpad.hpp",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="xtensor/xrandom.hpp",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="xtensor/xview.hpp",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node0 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="utils.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$utils_8hpp.html",tooltip=" "];
+  Node13 -> Node1 [color="midnightblue",fontsize="10",style="solid"];
+}

@@ -71,7 +71,7 @@ Construct a new Loss$<$ T$>$\+:: \mbox{\hyperlink{class_loss}{Loss}} object.
 {\em T} & \\
 \hline
 \end{DoxyTemplParams}
-\mbox{\Hypertarget{class_loss_a5b75c55ce90781d1b12d02f1bedbfa4f}\label{class_loss_a5b75c55ce90781d1b12d02f1bedbfa4f}} 
+default use C\+R\+O\+S\+S\+\_\+\+E\+N\+T\+R\+O\+PY\mbox{\Hypertarget{class_loss_a5b75c55ce90781d1b12d02f1bedbfa4f}\label{class_loss_a5b75c55ce90781d1b12d02f1bedbfa4f}} 
 \index{Loss$<$ T $>$@{Loss$<$ T $>$}!Loss@{Loss}}
 \index{Loss@{Loss}!Loss$<$ T $>$@{Loss$<$ T $>$}}
 \subsubsection{\texorpdfstring{Loss()}{Loss()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
@@ -124,7 +124,13 @@ T \mbox{\hyperlink{class_loss}{Loss}}$<$ T $>$\+::Cross\+Entropy\+Loss (\begin{D
 \begin{DoxyReturn}{Returns}
 T 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_loss_a20cbb31f5e0bb747ba6f8ee6ba25648c}\label{class_loss_a20cbb31f5e0bb747ba6f8ee6ba25648c}} 
+/// construct index vector (stupied xt\+::index\+\_\+view, maybe bug?)
+
+exp\+\_\+sum.\+shape()\+: \mbox{[}N, 1\mbox{]}
+
+exp\+\_\+sum.\+shape()\+: \mbox{[}N, 1\mbox{]}
+
+loss.\+shape()\+: \mbox{[}N, 1\mbox{]}\mbox{\Hypertarget{class_loss_a20cbb31f5e0bb747ba6f8ee6ba25648c}\label{class_loss_a20cbb31f5e0bb747ba6f8ee6ba25648c}} 
 \index{Loss$<$ T $>$@{Loss$<$ T $>$}!get\_grad@{get\_grad}}
 \index{get\_grad@{get\_grad}!Loss$<$ T $>$@{Loss$<$ T $>$}}
 \subsubsection{\texorpdfstring{get\_grad()}{get\_grad()}}

@@ -25,7 +25,7 @@
 <area shape="rect" id="node16" title=" " alt="" coords="1414,603,1558,629"/>
 <area shape="rect" id="node17" title=" " alt="" coords="1582,603,1707,629"/>
 <area shape="rect" id="node21" href="$init_8hpp.html" title="Init the network. Containing two funcitons: kaiming_normal and kaiming_uniform." alt="" coords="458,229,522,256"/>
-<area shape="rect" id="node24" href="$convolution__impl_8hpp.html" title="convolution_impl.hpp" alt="" coords="547,229,689,256"/>
+<area shape="rect" id="node24" href="$convolution__impl_8hpp.html" title="implementation for the convolution" alt="" coords="547,229,689,256"/>
 <area shape="rect" id="node23" href="$linear__impl_8hpp.html" title="linear_impl.hpp" alt="" coords="650,379,759,405"/>
 <area shape="rect" id="node26" href="$loss__impl_8hpp.html" title="loss_impl.hpp" alt="" coords="816,229,919,256"/>
 <area shape="rect" id="node28" href="$optimizer__base_8hpp.html" title=" " alt="" coords="1044,304,1179,331"/>

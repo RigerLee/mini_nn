@@ -6,22 +6,12 @@
 
 
 
-Inheritance diagram for Linear$<$ T $>$\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=146pt]{class_linear__inherit__graph}
-\end{center}
-\end{figure}
+Inheritance diagram for Linear$<$ T $>$\+:
+% FIG 0
 
 
-Collaboration diagram for Linear$<$ T $>$\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=146pt]{class_linear__coll__graph}
-\end{center}
-\end{figure}
+Collaboration diagram for Linear$<$ T $>$\+:
+% FIG 1
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -43,7 +33,7 @@ virtual \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}}
 virtual \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \mbox{\hyperlink{class_linear_a747db1996e723fae7c9713d4b7f303af}{backward}} (const \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \&dout) override
 \item 
 virtual size\+\_\+t \mbox{\hyperlink{class_linear_a753a7cb02a0b18e8922d23db905eb534}{get\+\_\+fan}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the fan object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -105,6 +95,14 @@ virtual \mbox{\hyperlink{class_linear}{Linear}}$<$ T $>$\+::$\sim$\mbox{\hyperli
 xt\+::xarray$<$ T $>$ \mbox{\hyperlink{class_linear}{Linear}}$<$ T $>$\+::backward (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \&}]{dout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em dout} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix 
+\end{DoxyReturn}
+
 
 Implements \mbox{\hyperlink{class_layer_ac4c13a3a85bfdd4d7d4d18669e3299fe}{Layer$<$ T $>$}}.
 
@@ -116,6 +114,14 @@ Implements \mbox{\hyperlink{class_layer_ac4c13a3a85bfdd4d7d4d18669e3299fe}{Layer
 xt\+::xarray$<$ T $>$ \mbox{\hyperlink{class_linear}{Linear}}$<$ T $>$\+::forward (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em in} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix 
+\end{DoxyReturn}
+
 
 Implements \mbox{\hyperlink{class_layer_ab15b665c86974b1cf1d7ba4e309cb0e5}{Layer$<$ T $>$}}.
 
@@ -126,6 +132,13 @@ Implements \mbox{\hyperlink{class_layer_ab15b665c86974b1cf1d7ba4e309cb0e5}{Layer
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 size\+\_\+t \mbox{\hyperlink{class_linear}{Linear}}$<$ T $>$\+::get\+\_\+fan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Get the fan object. 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t 
+\end{DoxyReturn}
 
 
 Reimplemented from \mbox{\hyperlink{class_layer_a43681206a2ef690667c41423b6b6f20b}{Layer$<$ T $>$}}.

@@ -11,22 +11,12 @@ Re\+Lu Class, the rectifier is an activation function.
 
 
 
-Inheritance diagram for Re\+LU$<$ T $>$\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=144pt]{class_re_l_u__inherit__graph}
-\end{center}
-\end{figure}
+Inheritance diagram for Re\+LU$<$ T $>$\+:
+% FIG 0
 
 
-Collaboration diagram for Re\+LU$<$ T $>$\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=144pt]{class_re_l_u__coll__graph}
-\end{center}
-\end{figure}
+Collaboration diagram for Re\+LU$<$ T $>$\+:
+% FIG 1
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -38,13 +28,13 @@ typedef Matrix\+::shape\+\_\+type \mbox{\hyperlink{class_re_l_u_ae27e6aba0a09baa
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_re_l_u_ad378d979e537b8af65513b3cb9bfe2b1}{Re\+LU}} ()
-\begin{DoxyCompactList}\small\item\em Construct a new Re L U$<$ T$>$\+:: Re L U object, the rectifier is an activation function. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Construct a new Re L U object. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_re_l_u_a6694b0386daea4398ad932f92382e206}{$\sim$\+Re\+LU}} ()=default
-\item 
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_re_l_u}{Re\+LU}} object. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_re_l_u_a3d1448f06335a4ab7227ec31a43a410f}{Matrix}} \mbox{\hyperlink{class_re_l_u_aef903f5e7d309e76f49abc34043354ce}{forward}} (const \mbox{\hyperlink{class_re_l_u_a3d1448f06335a4ab7227ec31a43a410f}{Matrix}} \&in) override
-\begin{DoxyCompactList}\small\item\em forward function \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em forward function in the network \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_re_l_u_a3d1448f06335a4ab7227ec31a43a410f}{Matrix}} \mbox{\hyperlink{class_re_l_u_aa634f43909614b979d84f5d4e5480bb4}{backward}} (const \mbox{\hyperlink{class_re_l_u_a3d1448f06335a4ab7227ec31a43a410f}{Matrix}} \&dout) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em backward function in the network \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
@@ -92,7 +82,9 @@ typedef Matrix\+::shape\+\_\+type \mbox{\hyperlink{class_re_l_u}{Re\+LU}}$<$ T $
 
 
 
-Construct a new Re L U$<$ T$>$\+:: Re L U object, the rectifier is an activation function. 
+Construct a new Re L U object. 
+
+Construct a new Re L U$<$ T$>$\+:: Re L U object, the rectifier is an activation function.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -112,6 +104,10 @@ virtual \mbox{\hyperlink{class_re_l_u}{Re\+LU}}$<$ T $>$\+::$\sim$\mbox{\hyperli
 
 
 
+Destroy the \mbox{\hyperlink{class_re_l_u}{Re\+LU}} object. 
+
+
+
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{class_re_l_u_aa634f43909614b979d84f5d4e5480bb4}\label{class_re_l_u_aa634f43909614b979d84f5d4e5480bb4}} 
 \index{ReLU$<$ T $>$@{ReLU$<$ T $>$}!backward@{backward}}
@@ -120,6 +116,18 @@ virtual \mbox{\hyperlink{class_re_l_u}{Re\+LU}}$<$ T $>$\+::$\sim$\mbox{\hyperli
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 xt\+::xarray$<$ T $>$ \mbox{\hyperlink{class_re_l_u}{Re\+LU}}$<$ T $>$\+::backward (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_re_l_u_a3d1448f06335a4ab7227ec31a43a410f}{Matrix}} \&}]{dout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+backward function in the network 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dout} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix
+\end{DoxyReturn}
 
 \begin{DoxyTemplParams}{Template Parameters}
 {\em T} & \\
@@ -146,7 +154,9 @@ xt\+::xarray$<$ T $>$ \mbox{\hyperlink{class_re_l_u}{Re\+LU}}$<$ T $>$\+::forwar
 
 
 
-forward function 
+forward function in the network 
+
+forward function
 
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -156,6 +166,19 @@ forward function
 
 \begin{DoxyParams}{Parameters}
 {\em in} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+xt\+::xarray$<$\+T$>$
+\end{DoxyReturn}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the input \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
