@@ -41,8 +41,8 @@ Loss<T>::Loss(LOSS_TYPE loss_type) {
  * @brief 
  * 
  * @tparam T 
- * @param scores 
- * @param target 
+ * @param scores : the score to evaluate the model
+ * @param target : the aim
  * @return T 
  */
 template <typename T>

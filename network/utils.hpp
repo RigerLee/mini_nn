@@ -12,7 +12,7 @@
 
 #include <common_header.hpp>
 /**
- * @brief 
+ * @brief gets the shape of the input array
  * 
  * @tparam T 
  * @param matrix 

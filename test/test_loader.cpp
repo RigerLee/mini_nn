@@ -15,7 +15,7 @@
 
 using namespace std;
 /**
- * @brief
+ * @brief load the model
  *
  * @param argc
  * @param argv

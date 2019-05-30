@@ -11,6 +11,13 @@
 #include "network.hpp"
 using namespace std;
 
+/**
+ * @brief test the net
+ * 
+ * @param argc 
+ * @param argv 
+ * @return int 
+ */
 int main(int argc, char** argv) {
   Network<double> net;
   auto input = xt::linspace<double>(-0.5, 0.5, 18).reshape({2, 1, 3, 3});

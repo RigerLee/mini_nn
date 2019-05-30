@@ -17,8 +17,8 @@
  * @brief kaiming normal distribution
  *
  * @tparam T
- * @param layer
- * @param mode
+ * @param layer: the layer of the network
+ * @param mode: how to convolution
  * @details
  * According to the method described by He, K et al. in 'Delving deep into
  * rectifiers: Surpassing human-level performance on ImageNet classification' in
@@ -45,8 +45,8 @@ void kaiming_normal(Layer<T>& layer, std::string mode = "ReLU") {
  * @brief kaiming uniform distribution
  *
  * @tparam T
- * @param layer
- * @param mode
+ * @param layer: the layer of the network
+ * @param mode: how to convolution
  * @details
  * According to the method described by He, K et al. in 'Delving deep into
  * rectifiers: Surpassing human-level performance on ImageNet classification' in

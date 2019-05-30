@@ -18,9 +18,10 @@
 #include "common_header.hpp"
 #include "utils.hpp"
 /**
- * @brief 
- * 
- * @tparam T 
+ * @brief the dataset class
+ *
+ * @tparam T
+ * @details: read the images from binary form, 
  */
 template <typename T>
 class Dataset {
@@ -31,11 +32,42 @@ public:
   Dataset(bool shuffle = true);
   virtual ~Dataset() = default;
 
+  /**
+   * @brief read from MINST dataset
+   * 
+   * @param path 
+   */
   void MNIST(const std::string& path);
+  /**
+   * @brief read images from binary form
+   * 
+   * @param image_file : the image
+   * @param data        : the data
+   */
   void read_bin_images(const std::string& image_file, xt::xarray<T>& data);
+  /**
+   * @brief read labels from binary form
+   *
+   * @param label_file: the labelled file
+   * @param label     : the label of the file, from 1 to 9
+   */
   void read_bin_labels(const std::string& label_file, xt::xarray<T>& label);
+  /**
+   * @brief load the image
+   * 
+   * @param mode : the ways we read
+   * @param batch_size : the size of batch
+   * @return std::vector<std::pair<Matrix, Matrix>> 
+   */
   std::vector<std::pair<Matrix, Matrix>> loader(const std::string& mode,
                                                 int batch_size = 1);
+  /**
+   * @brief normalize funtion
+   *
+   * @param mean:  average
+   * @param stdev: std
+   * @details Average the image according to the given mean and std
+   */
   virtual void normalize(const xt::xarray<T>& mean, const xt::xarray<T>& stdev);
 
 protected:

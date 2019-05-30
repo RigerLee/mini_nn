@@ -14,11 +14,11 @@
 #include "pooling.hpp"
 #include <iostream>
 /**
- * @brief 
- * 
- * @param argc 
- * @param argv 
- * @return int 
+ * @brief main function to test the conv2d & Linear & MaxPool2d
+ *
+ * @param argc
+ * @param argv
+ * @return int
  */
 int main(int argc, char **argv) {
   {

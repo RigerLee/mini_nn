@@ -57,8 +57,8 @@ public:
   /**
    * @brief update the network
    * 
-   * @param target 
-   * @param grad 
+   * @param target : the aim 
+   * @param grad : gradient
    */
   virtual void update(Matrix &target, const Matrix &grad) = 0;
 

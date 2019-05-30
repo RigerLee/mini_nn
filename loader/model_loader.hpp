@@ -1,3 +1,13 @@
+/**
+ * @file model_loader.hpp
+ * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
+ * @brief load the model 
+ * @version 1.6.0
+ * @date 2019-05-30
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 #include <network.hpp>
 
 #include <stdint.h>
@@ -10,6 +20,13 @@
 #include <regex>
 #include <stdexcept>
 
+/**
+ * @brief parse function
+ * 
+ * @param fp :forward pass
+ * @param word_size : the size of the word
+ * @param shape : the shape of the function
+ */
 void parse_header(FILE* fp, size_t& word_size, std::vector<size_t>& shape) {
   char buffer[256];
   // read useless bytes
@@ -39,6 +56,13 @@ void parse_header(FILE* fp, size_t& word_size, std::vector<size_t>& shape) {
   word_size = std::stoi(ws.substr(0, right));
 }
 
+/**
+ * @brief load nnumpy
+ * 
+ * @tparam T 
+ * @param fp 
+ * @param out 
+ */
 template <typename T>
 void load_npy(FILE* fp, std::vector<T>& out) {
   std::vector<size_t> shape;
