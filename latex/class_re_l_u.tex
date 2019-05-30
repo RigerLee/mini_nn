@@ -2,6 +2,11 @@
 \label{class_re_l_u}\index{ReLU$<$ T $>$@{ReLU$<$ T $>$}}
 
 
+Re\+Lu Class, the rectifier is an activation function.  
+
+
+
+
 {\ttfamily \#include $<$activation.\+hpp$>$}
 
 
@@ -33,15 +38,32 @@ typedef Matrix\+::shape\+\_\+type \mbox{\hyperlink{class_re_l_u_ae27e6aba0a09baa
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_re_l_u_ad378d979e537b8af65513b3cb9bfe2b1}{Re\+LU}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new Re L U$<$ T$>$\+:: Re L U object, the rectifier is an activation function. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_re_l_u_a6694b0386daea4398ad932f92382e206}{$\sim$\+Re\+LU}} ()=default
 \item 
 virtual \mbox{\hyperlink{class_re_l_u_a3d1448f06335a4ab7227ec31a43a410f}{Matrix}} \mbox{\hyperlink{class_re_l_u_aef903f5e7d309e76f49abc34043354ce}{forward}} (const \mbox{\hyperlink{class_re_l_u_a3d1448f06335a4ab7227ec31a43a410f}{Matrix}} \&in) override
-\item 
+\begin{DoxyCompactList}\small\item\em forward function \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_re_l_u_a3d1448f06335a4ab7227ec31a43a410f}{Matrix}} \mbox{\hyperlink{class_re_l_u_aa634f43909614b979d84f5d4e5480bb4}{backward}} (const \mbox{\hyperlink{class_re_l_u_a3d1448f06335a4ab7227ec31a43a410f}{Matrix}} \&dout) override
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Re\+L\+U$<$ T $>$}
+
+Re\+Lu Class, the rectifier is an activation function. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+In the context of artificial neural networks, the rectifier is an activation function defined as the positive part of its argument\+:
+
+\{\textbackslash{}displaystyle f(x)=x$^\wedge$\{+\}=\textbackslash{}max(0,x)\} \{\textbackslash{}displaystyle f(x)=x$^\wedge$\{+\}=\textbackslash{}max(0,x)\}
+
+where x is the input to a neuron. This is also known as a ramp function and is analogous to half-\/wave rectification in electrical engineering. This activation function was first introduced to a dynamical network by Hahnloser et al. in 2000 with strong biological motivations and mathematical justifications. It has been demonstrated for the first time in 2011 to enable better training of deeper networks,compared to the widely-\/used activation functions prior to 2011, e.\+g., the logistic sigmoid (which is inspired by probability theory; see logistic regression) and its more practical counterpart, the hyperbolic tangent. The rectifier is, as of 2017, the most popular activation function for deep neural networks. 
 
 \subsection{Member Typedef Documentation}
 \mbox{\Hypertarget{class_re_l_u_a3d1448f06335a4ab7227ec31a43a410f}\label{class_re_l_u_a3d1448f06335a4ab7227ec31a43a410f}} 
@@ -68,7 +90,20 @@ typedef Matrix\+::shape\+\_\+type \mbox{\hyperlink{class_re_l_u}{Re\+LU}}$<$ T $
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 \mbox{\hyperlink{class_re_l_u}{Re\+LU}}$<$ T $>$\+::\mbox{\hyperlink{class_re_l_u}{Re\+LU}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_re_l_u_a6694b0386daea4398ad932f92382e206}\label{class_re_l_u_a6694b0386daea4398ad932f92382e206}} 
+
+
+Construct a new Re L U$<$ T$>$\+:: Re L U object, the rectifier is an activation function. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+In the context of artificial neural networks, the rectifier is an activation function defined as the positive part of its argument\+:
+
+\{\textbackslash{}displaystyle f(x)=x$^\wedge$\{+\}=\textbackslash{}max(0,x)\} \{\textbackslash{}displaystyle f(x)=x$^\wedge$\{+\}=\textbackslash{}max(0,x)\}
+
+where x is the input to a neuron. This is also known as a ramp function and is analogous to half-\/wave rectification in electrical engineering. This activation function was first introduced to a dynamical network by Hahnloser et al. in 2000 with strong biological motivations and mathematical justifications. It has been demonstrated for the first time in 2011 to enable better training of deeper networks, compared to the widely-\/used activation functions prior to 2011, e.\+g., the logistic sigmoid (which is inspired by probability theory; see logistic regression) and its more practical counterpart, the hyperbolic tangent. The rectifier is, as of 2017, the most popular activation function for deep neural networks. \mbox{\Hypertarget{class_re_l_u_a6694b0386daea4398ad932f92382e206}\label{class_re_l_u_a6694b0386daea4398ad932f92382e206}} 
 \index{ReLU$<$ T $>$@{ReLU$<$ T $>$}!````~ReLU@{$\sim$ReLU}}
 \index{````~ReLU@{$\sim$ReLU}!ReLU$<$ T $>$@{ReLU$<$ T $>$}}
 \subsubsection{\texorpdfstring{$\sim$ReLU()}{~ReLU()}}
@@ -86,6 +121,19 @@ virtual \mbox{\hyperlink{class_re_l_u}{Re\+LU}}$<$ T $>$\+::$\sim$\mbox{\hyperli
 xt\+::xarray$<$ T $>$ \mbox{\hyperlink{class_re_l_u}{Re\+LU}}$<$ T $>$\+::backward (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_re_l_u_a3d1448f06335a4ab7227ec31a43a410f}{Matrix}} \&}]{dout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em dout} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+xt\+::xarray$<$\+T$>$ 
+\end{DoxyReturn}
+
 
 Implements \mbox{\hyperlink{class_layer_ac4c13a3a85bfdd4d7d4d18669e3299fe}{Layer$<$ T $>$}}.
 
@@ -96,6 +144,23 @@ Implements \mbox{\hyperlink{class_layer_ac4c13a3a85bfdd4d7d4d18669e3299fe}{Layer
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 xt\+::xarray$<$ T $>$ \mbox{\hyperlink{class_re_l_u}{Re\+LU}}$<$ T $>$\+::forward (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_re_l_u_a3d1448f06335a4ab7227ec31a43a410f}{Matrix}} \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+forward function 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+xt\+::xarray$<$\+T$>$ 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{class_layer_ab15b665c86974b1cf1d7ba4e309cb0e5}{Layer$<$ T $>$}}.

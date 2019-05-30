@@ -1,6 +1,6 @@
 <map id="layer/convolution.hpp" name="layer/convolution.hpp">
 <area shape="rect" id="node1" title="convolution.hpp" alt="" coords="573,5,716,32"/>
-<area shape="rect" id="node2" href="$init_8hpp.html" title=" " alt="" coords="613,80,677,107"/>
+<area shape="rect" id="node2" href="$init_8hpp.html" title="Init the network. Containing two funcitons: kaiming_normal and kaiming_uniform." alt="" coords="613,80,677,107"/>
 <area shape="rect" id="node4" href="$layer__base_8hpp.html" title="layer_base.hpp" alt="" coords="387,453,497,480"/>
 <area shape="rect" id="node31" href="$convolution__impl_8hpp.html" title="convolution_impl.hpp" alt="" coords="793,155,936,181"/>
 <area shape="rect" id="node3" href="$linear_8hpp.html" title="linear.hpp" alt="" coords="605,155,684,181"/>
@@ -20,12 +20,12 @@
 <area shape="rect" id="node16" title=" " alt="" coords="1477,677,1602,704"/>
 <area shape="rect" id="node19" href="$network_8hpp.html" title=" " alt="" coords="736,304,828,331"/>
 <area shape="rect" id="node20" title=" " alt="" coords="1017,379,1056,405"/>
-<area shape="rect" id="node21" href="$activation_8hpp.html" title="activation.hpp" alt="" coords="537,379,638,405"/>
+<area shape="rect" id="node21" href="$activation_8hpp.html" title=" " alt="" coords="537,379,638,405"/>
 <area shape="rect" id="node23" href="$loss_8hpp.html" title=" " alt="" coords="799,379,869,405"/>
 <area shape="rect" id="node25" href="$optimizer_8hpp.html" title=" " alt="" coords="893,379,993,405"/>
 <area shape="rect" id="node28" href="$pooling_8hpp.html" title="pooling.hpp" alt="" coords="686,379,774,405"/>
 <area shape="rect" id="node30" href="$network__impl_8hpp.html" title=" " alt="" coords="1081,379,1203,405"/>
-<area shape="rect" id="node22" href="$activation__impl_8hpp.html" title="activation_impl.hpp" alt="" coords="521,453,653,480"/>
+<area shape="rect" id="node22" href="$activation__impl_8hpp.html" title="the implentation for the header file of activation function" alt="" coords="521,453,653,480"/>
 <area shape="rect" id="node24" href="$loss__impl_8hpp.html" title="loss_impl.hpp" alt="" coords="872,453,975,480"/>
 <area shape="rect" id="node26" href="$optimizer__base_8hpp.html" title=" " alt="" coords="908,528,1043,555"/>
 <area shape="rect" id="node27" href="$optimizer__impl_8hpp.html" title=" " alt="" coords="1050,453,1181,480"/>

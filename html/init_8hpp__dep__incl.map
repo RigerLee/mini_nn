@@ -1,5 +1,5 @@
 <map id="network/init.hpp" name="network/init.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="449,5,562,32"/>
+<area shape="rect" id="node1" title="Init the network. Containing two funcitons: kaiming_normal and kaiming_uniform." alt="" coords="449,5,562,32"/>
 <area shape="rect" id="node2" href="$convolution_8hpp.html" title="convolution.hpp" alt="" coords="326,80,469,107"/>
 <area shape="rect" id="node6" href="$linear_8hpp.html" title="linear.hpp" alt="" coords="497,304,607,331"/>
 <area shape="rect" id="node3" href="$network_8hpp.html" title=" " alt="" coords="327,155,468,181"/>

@@ -1,8 +1,14 @@
 \hypertarget{init_8hpp}{}\section{network/init.hpp File Reference}
 \label{init_8hpp}\index{network/init.hpp@{network/init.hpp}}
+
+
+Init the network. Containing two funcitons\+: kaiming\+\_\+normal and kaiming\+\_\+uniform.  
+
+
 {\ttfamily \#include \char`\"{}convolution.\+hpp\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}linear.\+hpp\char`\"{}}\newline
-Include dependency graph for init.\+hpp\+:\nopagebreak
+Include dependency graph for init.\+hpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,9 +26,26 @@ This graph shows which files directly or indirectly include this file\+:\nopageb
 \begin{DoxyCompactItemize}
 \item 
 {\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{init_8hpp_a807e1c6ebad01bb2723649a3589bb5a6}{kaiming\+\_\+normal}} (\mbox{\hyperlink{class_layer}{Layer}}$<$ T $>$ \&layer, std\+::string mode=\char`\"{}Re\+LU\char`\"{})
-\item 
+\begin{DoxyCompactList}\small\item\em kaiming normal distribution \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{init_8hpp_a5b0c52b94fd3c774533a86c30de37ee4}{kaiming\+\_\+uniform}} (\mbox{\hyperlink{class_layer}{Layer}}$<$ T $>$ \&layer, std\+::string mode=\char`\"{}Re\+LU\char`\"{})
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em kaiming uniform distribution \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Init the network. Containing two funcitons\+: kaiming\+\_\+normal and kaiming\+\_\+uniform. 
+
+\begin{DoxyAuthor}{Author}
+Rui\+Jian Li(\href{mailto:lirj@shanghaitech.edu.cn}{\texttt{ lirj@shanghaitech.\+edu.\+cn}}), Yi\+Fan Cao(\href{mailto:caoyf@shanghaitech.edu.cn}{\texttt{ caoyf@shanghaitech.\+edu.\+cn}}), Yan\+Peng Hu(\href{mailto:huyp@shanghaitech.edu.cn}{\texttt{ huyp@shanghaitech.\+edu.\+cn}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+6.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/05-\/30
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2019 
+\end{DoxyCopyright}
 
 
 \subsection{Function Documentation}
@@ -33,10 +56,43 @@ This graph shows which files directly or indirectly include this file\+:\nopageb
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 void kaiming\+\_\+normal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_layer}{Layer}}$<$ T $>$ \&}]{layer,  }\item[{std\+::string}]{mode = {\ttfamily \char`\"{}ReLU\char`\"{}} }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{init_8hpp_a5b0c52b94fd3c774533a86c30de37ee4}\label{init_8hpp_a5b0c52b94fd3c774533a86c30de37ee4}} 
+
+
+kaiming normal distribution 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em layer} & \\
+\hline
+{\em mode} & \\
+\hline
+\end{DoxyParams}
+According to the method described by He, K et al. in \textquotesingle{}Delving deep into rectifiers\+: Surpassing human-\/level performance on Image\+Net classification\textquotesingle{} in 2015, the input tensor or variable is filled with a uniform distribution generation value. The resulting value in the tensor is sampled from U(-\/bound, bound), where bound = sqrt(2/((1 + a$^\wedge$2) $\ast$ fan\+\_\+in)) $\ast$ sqrt(3). Also known as He initialisation. \mbox{\Hypertarget{init_8hpp_a5b0c52b94fd3c774533a86c30de37ee4}\label{init_8hpp_a5b0c52b94fd3c774533a86c30de37ee4}} 
 \index{init.hpp@{init.hpp}!kaiming\_uniform@{kaiming\_uniform}}
 \index{kaiming\_uniform@{kaiming\_uniform}!init.hpp@{init.hpp}}
 \subsubsection{\texorpdfstring{kaiming\_uniform()}{kaiming\_uniform()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 void kaiming\+\_\+uniform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_layer}{Layer}}$<$ T $>$ \&}]{layer,  }\item[{std\+::string}]{mode = {\ttfamily \char`\"{}ReLU\char`\"{}} }\end{DoxyParamCaption})}
 
+
+
+kaiming uniform distribution 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em layer} & \\
+\hline
+{\em mode} & \\
+\hline
+\end{DoxyParams}
+According to the method described by He, K et al. in \textquotesingle{}Delving deep into rectifiers\+: Surpassing human-\/level performance on Image\+Net classification\textquotesingle{} in 2015, the input tensor or variable is filled with a uniform distribution generation value. The resulting value in the tensor is sampled from U(-\/bound, bound), where bound = sqrt(2/((1 + a$^\wedge$2) $\ast$ fan\+\_\+in)) $\ast$ sqrt(3). Also known as He initialisation. 

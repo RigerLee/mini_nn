@@ -1,12 +1,12 @@
 <map id="test/test_layer.cpp" name="test/test_layer.cpp">
 <area shape="rect" id="node1" title=" " alt="" coords="297,5,428,32"/>
-<area shape="rect" id="node2" href="$activation_8hpp.html" title="activation.hpp" alt="" coords="237,453,339,480"/>
+<area shape="rect" id="node2" href="$activation_8hpp.html" title=" " alt="" coords="237,453,339,480"/>
 <area shape="rect" id="node6" title=" " alt="" coords="5,752,77,779"/>
 <area shape="rect" id="node18" href="$convolution_8hpp.html" title="convolution.hpp" alt="" coords="461,80,571,107"/>
 <area shape="rect" id="node20" href="$linear_8hpp.html" title="linear.hpp" alt="" coords="415,229,494,256"/>
 <area shape="rect" id="node29" href="$pooling_8hpp.html" title="pooling.hpp" alt="" coords="363,453,451,480"/>
 <area shape="rect" id="node3" href="$layer__base_8hpp.html" title="layer_base.hpp" alt="" coords="497,528,607,555"/>
-<area shape="rect" id="node17" href="$activation__impl_8hpp.html" title="activation_impl.hpp" alt="" coords="193,528,325,555"/>
+<area shape="rect" id="node17" href="$activation__impl_8hpp.html" title="the implentation for the header file of activation function" alt="" coords="193,528,325,555"/>
 <area shape="rect" id="node4" href="$common__header_8hpp.html" title=" " alt="" coords="663,677,806,704"/>
 <area shape="rect" id="node16" href="$utils_8hpp.html" title=" " alt="" coords="517,603,587,629"/>
 <area shape="rect" id="node5" title=" " alt="" coords="857,752,919,779"/>
@@ -19,7 +19,7 @@
 <area shape="rect" id="node13" title=" " alt="" coords="392,752,515,779"/>
 <area shape="rect" id="node14" title=" " alt="" coords="539,752,683,779"/>
 <area shape="rect" id="node15" title=" " alt="" coords="707,752,832,779"/>
-<area shape="rect" id="node19" href="$init_8hpp.html" title=" " alt="" coords="472,155,536,181"/>
+<area shape="rect" id="node19" href="$init_8hpp.html" title="Init the network. Containing two funcitons: kaiming_normal and kaiming_uniform." alt="" coords="472,155,536,181"/>
 <area shape="rect" id="node32" href="$convolution__impl_8hpp.html" title="convolution_impl.hpp" alt="" coords="518,229,661,256"/>
 <area shape="rect" id="node21" href="$linear__impl_8hpp.html" title="linear_impl.hpp" alt="" coords="501,304,611,331"/>
 <area shape="rect" id="node22" href="$network_8hpp.html" title=" " alt="" coords="555,379,647,405"/>
