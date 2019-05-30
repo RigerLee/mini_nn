@@ -1,17 +1,22 @@
 /**
  * @file linear_impl.hpp
- * @brief linear_impl.hpp
- * @details head file
- * @mainpage mini_nn
- * @author RuiJian Li, YiFan Cao, YanPeng Hu
- * @email lirj@shanghaitech.edu.cn,
- * caoyf@shanghaitech.edu.cn,huyp@shanghaitech.edu.cn
+ * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
+ * @brief implementation of the linear & forward &backword
  * @version 1.6.0
- * @date 2019-05-26
+ * @date 2019-05-30
+ * 
+ * @copyright Copyright (c) 2019
+ * 
  */
 
 #include <network.hpp>
-
+/**
+ * @brief Construct a new Linear< T>:: Linear object
+ * 
+ * @tparam T 
+ * @param in_dims : in dimensions
+ * @param out_dims : out dimensions
+ */
 template <typename T>
 Linear<T>::Linear(size_t in_dims, size_t out_dims) {
   this->layer_type_ = LINEAR;
@@ -30,6 +35,13 @@ Linear<T>::Linear(size_t in_dims, size_t out_dims) {
   kaiming_normal(*this, "ReLU");
 }
 
+/**
+ * @brief the implementation of the forward function
+ *
+ * @tparam T
+ * @param in
+ * @return xt::xarray<T>
+ */
 template <typename T>
 xt::xarray<T> Linear<T>::forward(const xt::xarray<T>& in) {
   this->in_ = in;
@@ -39,7 +51,13 @@ xt::xarray<T> Linear<T>::forward(const xt::xarray<T>& in) {
   Matrix out = xt::linalg::dot(in_reshape_, xt::transpose(this->W_)) + this->b_;
   return out;
 }
-
+/**
+ * @brief the implementation of the backward function
+ * 
+ * @tparam T 
+ * @param dout 
+ * @return xt::xarray<T> 
+ */
 template <typename T>
 xt::xarray<T> Linear<T>::backward(const xt::xarray<T>& dout) {
   this->db_ = xt::sum(dout, {0});
@@ -54,7 +72,12 @@ xt::xarray<T> Linear<T>::backward(const xt::xarray<T>& dout) {
 
   return this->din_;
 }
-
+/**
+ * @brief get the fan of the network
+ * 
+ * @tparam T 
+ * @return size_t 
+ */
 template <typename T>
 size_t Linear<T>::get_fan() {
   return this->W_.shape(1);

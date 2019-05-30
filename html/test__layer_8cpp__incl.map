@@ -2,10 +2,10 @@
 <area shape="rect" id="node1" title=" " alt="" coords="297,5,428,32"/>
 <area shape="rect" id="node2" href="$activation_8hpp.html" title=" " alt="" coords="237,453,339,480"/>
 <area shape="rect" id="node6" title=" " alt="" coords="5,752,77,779"/>
-<area shape="rect" id="node18" href="$convolution_8hpp.html" title="convolution.hpp" alt="" coords="461,80,571,107"/>
-<area shape="rect" id="node20" href="$linear_8hpp.html" title="linear.hpp" alt="" coords="415,229,494,256"/>
-<area shape="rect" id="node29" href="$pooling_8hpp.html" title="pooling.hpp" alt="" coords="363,453,451,480"/>
-<area shape="rect" id="node3" href="$layer__base_8hpp.html" title="layer_base.hpp" alt="" coords="497,528,607,555"/>
+<area shape="rect" id="node18" href="$convolution_8hpp.html" title="the attribute of the convolution" alt="" coords="461,80,571,107"/>
+<area shape="rect" id="node20" href="$linear_8hpp.html" title="the linear of the header file" alt="" coords="415,229,494,256"/>
+<area shape="rect" id="node29" href="$pooling_8hpp.html" title=" " alt="" coords="363,453,451,480"/>
+<area shape="rect" id="node3" href="$layer__base_8hpp.html" title="the attribute of the base of the layter" alt="" coords="497,528,607,555"/>
 <area shape="rect" id="node17" href="$activation__impl_8hpp.html" title="the implentation for the header file of activation function" alt="" coords="193,528,325,555"/>
 <area shape="rect" id="node4" href="$common__header_8hpp.html" title=" " alt="" coords="663,677,806,704"/>
 <area shape="rect" id="node16" href="$utils_8hpp.html" title=" " alt="" coords="517,603,587,629"/>
@@ -21,7 +21,7 @@
 <area shape="rect" id="node15" title=" " alt="" coords="707,752,832,779"/>
 <area shape="rect" id="node19" href="$init_8hpp.html" title="Init the network. Containing two funcitons: kaiming_normal and kaiming_uniform." alt="" coords="472,155,536,181"/>
 <area shape="rect" id="node32" href="$convolution__impl_8hpp.html" title="implementation for the convolution" alt="" coords="518,229,661,256"/>
-<area shape="rect" id="node21" href="$linear__impl_8hpp.html" title="linear_impl.hpp" alt="" coords="501,304,611,331"/>
+<area shape="rect" id="node21" href="$linear__impl_8hpp.html" title="implementation of the linear &amp; forward &amp;backword" alt="" coords="501,304,611,331"/>
 <area shape="rect" id="node22" href="$network_8hpp.html" title=" " alt="" coords="555,379,647,405"/>
 <area shape="rect" id="node23" title=" " alt="" coords="526,453,565,480"/>
 <area shape="rect" id="node24" href="$loss_8hpp.html" title=" " alt="" coords="911,453,982,480"/>
@@ -30,5 +30,5 @@
 <area shape="rect" id="node25" href="$loss__impl_8hpp.html" title="loss_impl.hpp" alt="" coords="978,528,1081,555"/>
 <area shape="rect" id="node27" href="$optimizer__base_8hpp.html" title=" " alt="" coords="667,603,802,629"/>
 <area shape="rect" id="node28" href="$optimizer__impl_8hpp.html" title=" " alt="" coords="772,528,903,555"/>
-<area shape="rect" id="node30" href="$pooling__impl_8hpp.html" title="pooling_impl.hpp" alt="" coords="349,528,467,555"/>
+<area shape="rect" id="node30" href="$pooling__impl_8hpp.html" title="the implementation of the pooling" alt="" coords="349,528,467,555"/>
 </map>

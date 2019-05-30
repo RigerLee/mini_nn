@@ -1,7 +1,7 @@
 /**
  * @file layer_base.hpp
  * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
- * @brief 
+ * @brief the attribute of the base of the layter
  * @version 1.6.0
  * @date 2019-05-30
  * 
@@ -46,17 +46,17 @@ public:
    */
   virtual ~Layer() = default;
   /**
-   * @brief 
+   * @brief forward function in the network
    * 
    * @param in 
    * @return Matrix 
    */
   virtual Matrix forward(const Matrix& in) = 0;
   /**
-   * @brief 
-   * 
-   * @param dout 
-   * @return Matrix 
+   * @brief backward function in the networ
+   *
+   * @param dout
+   * @return Matrix
    */
   virtual Matrix backward(const Matrix& dout) = 0;
   /**

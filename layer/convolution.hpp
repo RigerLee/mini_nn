@@ -1,7 +1,7 @@
 /**
  * @file convolution.hpp
  * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
- * @brief 
+ * @brief  the attribute of the convolution 
  * @version 1.6.0
  * @date 2019-05-30
  * 

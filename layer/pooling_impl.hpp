@@ -1,6 +1,6 @@
 /**
  * @file pooling_impl.hpp
- * @brief pooling_impl.hpp
+ * @brief the implementation of the pooling
  * @details head file
  * @mainpage mini_nn
  * @author RuiJian Li, YiFan Cao, YanPeng Hu
@@ -10,6 +10,15 @@
  * @date 2019-05-26
  */
 
+/**
+ * @brief Construct a new Max Pool 2d< T>:: Max Pool 2d object
+ *
+ * @tparam T
+ * @param kernel_size : the size of the kernel
+ * @param stride : the convolution is the step size of each dimension of the
+ * image, which is a one-dimensional vector.
+ * @param padding :This value determines the different convolution methods
+ */
 template <typename T>
 MaxPool2d<T>::MaxPool2d(size_t kernel_size, size_t stride, size_t padding) {
   this->layer_type_ = POOL;
@@ -20,6 +29,13 @@ MaxPool2d<T>::MaxPool2d(size_t kernel_size, size_t stride, size_t padding) {
   this->stride_ = stride;
 }
 
+/**
+ * @brief forward function in the maxpool2d
+ * 
+ * @tparam T 
+ * @param in : input
+ * @return xt::xarray<T> 
+ */
 template <typename T>
 xt::xarray<T> MaxPool2d<T>::forward(const xt::xarray<T>& in) {
   if (in.shape().size() != 4) {
@@ -55,7 +71,13 @@ xt::xarray<T> MaxPool2d<T>::forward(const xt::xarray<T>& in) {
 
   return out;
 }
-
+/**
+ * @brief backford function in the maxpool2d
+ * 
+ * @tparam T 
+ * @param dout 
+ * @return xt::xarray<T> 
+ */
 template <typename T>
 xt::xarray<T> MaxPool2d<T>::backward(const xt::xarray<T>& dout) {
   size_t H, W, H_out, W_out;

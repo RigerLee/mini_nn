@@ -1,7 +1,7 @@
 <map id="Layer&lt; T &gt;" name="Layer&lt; T &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="190,5,275,32"/>
-<area shape="rect" id="node2" href="$class_conv2d.html" title=" " alt="" coords="5,80,100,107"/>
-<area shape="rect" id="node3" href="$class_linear.html" title=" " alt="" coords="125,80,213,107"/>
-<area shape="rect" id="node4" href="$class_max_pool2d.html" title=" " alt="" coords="237,80,356,107"/>
+<area shape="rect" id="node1" title="the class of the layer" alt="" coords="190,5,275,32"/>
+<area shape="rect" id="node2" href="$class_conv2d.html" title="Computes a 2&#45;D convolution given 4&#45;D input and filter tensors." alt="" coords="5,80,100,107"/>
+<area shape="rect" id="node3" href="$class_linear.html" title="the layer class which inherits the linear class" alt="" coords="125,80,213,107"/>
+<area shape="rect" id="node4" href="$class_max_pool2d.html" title="the class for the maxpool" alt="" coords="237,80,356,107"/>
 <area shape="rect" id="node5" href="$class_re_l_u.html" title="ReLu Class, the rectifier is an activation function." alt="" coords="381,80,466,107"/>
 </map>

@@ -2,16 +2,33 @@
 \label{class_max_pool2d}\index{MaxPool2d$<$ T $>$@{MaxPool2d$<$ T $>$}}
 
 
+the class for the maxpool  
+
+
+
+
 {\ttfamily \#include $<$pooling.\+hpp$>$}
 
 
 
 Inheritance diagram for Max\+Pool2d$<$ T $>$\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{class_max_pool2d__inherit__graph}
+\end{center}
+\end{figure}
 
 
 Collaboration diagram for Max\+Pool2d$<$ T $>$\+:
-% FIG 1
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{class_max_pool2d__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -23,15 +40,15 @@ typedef Matrix\+::shape\+\_\+type \mbox{\hyperlink{class_max_pool2d_ad70f776b32f
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_max_pool2d_adf1b59faff18335a4d8b7cdc9d9acad6}{Max\+Pool2d}} ()=default
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new Max Pool 2d object. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_max_pool2d_a826785eceda78b54d150404ef24d23c3}{$\sim$\+Max\+Pool2d}} ()=default
-\item 
+\begin{DoxyCompactList}\small\item\em Destroy the Max Pool 2d object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_max_pool2d_a5cfd5c6ae11f49fffb3d4a68f261f013}{Max\+Pool2d}} (size\+\_\+t kernel\+\_\+size, size\+\_\+t stride=0, size\+\_\+t padding=0)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new Max Pool 2d object. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \mbox{\hyperlink{class_max_pool2d_a424de7878c64a058a8549362dae448f0}{forward}} (const \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \&in) override
-\item 
+\begin{DoxyCompactList}\small\item\em forward function in the network \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \mbox{\hyperlink{class_max_pool2d_a05cc96411753ff4c0c79a1543af9e795}{backward}} (const \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \&dout) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em backward function in the network \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -41,6 +58,19 @@ size\+\_\+t \mbox{\hyperlink{class_max_pool2d_ab1dd4757718ee42e14bb7fdcf2a2be2c}
 \item 
 size\+\_\+t \mbox{\hyperlink{class_max_pool2d_af8701b485ce94e4e3242a22e25350c80}{stride\+\_\+}}
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Max\+Pool2d$<$ T $>$}
+
+the class for the maxpool 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
 
 
 \subsection{Member Typedef Documentation}
@@ -68,12 +98,20 @@ typedef Matrix\+::shape\+\_\+type \mbox{\hyperlink{class_max_pool2d}{Max\+Pool2d
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 \mbox{\hyperlink{class_max_pool2d}{Max\+Pool2d}}$<$ T $>$\+::\mbox{\hyperlink{class_max_pool2d}{Max\+Pool2d}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
+
+
+Construct a new Max Pool 2d object. 
+
 \mbox{\Hypertarget{class_max_pool2d_a826785eceda78b54d150404ef24d23c3}\label{class_max_pool2d_a826785eceda78b54d150404ef24d23c3}} 
 \index{MaxPool2d$<$ T $>$@{MaxPool2d$<$ T $>$}!````~MaxPool2d@{$\sim$MaxPool2d}}
 \index{````~MaxPool2d@{$\sim$MaxPool2d}!MaxPool2d$<$ T $>$@{MaxPool2d$<$ T $>$}}
 \subsubsection{\texorpdfstring{$\sim$MaxPool2d()}{~MaxPool2d()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 virtual \mbox{\hyperlink{class_max_pool2d}{Max\+Pool2d}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_max_pool2d}{Max\+Pool2d}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destroy the Max Pool 2d object. 
 
 \mbox{\Hypertarget{class_max_pool2d_a5cfd5c6ae11f49fffb3d4a68f261f013}\label{class_max_pool2d_a5cfd5c6ae11f49fffb3d4a68f261f013}} 
 \index{MaxPool2d$<$ T $>$@{MaxPool2d$<$ T $>$}!MaxPool2d@{MaxPool2d}}
@@ -82,6 +120,35 @@ virtual \mbox{\hyperlink{class_max_pool2d}{Max\+Pool2d}}$<$ T $>$\+::$\sim$\mbox
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 \mbox{\hyperlink{class_max_pool2d}{Max\+Pool2d}}$<$ T $>$\+::\mbox{\hyperlink{class_max_pool2d}{Max\+Pool2d}} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{kernel\+\_\+size,  }\item[{size\+\_\+t}]{stride = {\ttfamily 0},  }\item[{size\+\_\+t}]{padding = {\ttfamily 0} }\end{DoxyParamCaption})}
 
+
+
+Construct a new Max Pool 2d object. 
+
+Construct a new Max Pool 2d$<$ T$>$\+:: Max Pool 2d object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em kernel\+\_\+size} & \\
+\hline
+{\em stride} & \\
+\hline
+{\em padding} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em kernel\+\_\+size} & \+: the size of the kernel \\
+\hline
+{\em stride} & \+: the convolution is the step size of each dimension of the image, which is a one-\/dimensional vector. \\
+\hline
+{\em padding} & \+:This value determines the different convolution methods \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
@@ -93,12 +160,31 @@ virtual \mbox{\hyperlink{class_max_pool2d}{Max\+Pool2d}}$<$ T $>$\+::$\sim$\mbox
 xt\+::xarray$<$ T $>$ \mbox{\hyperlink{class_max_pool2d}{Max\+Pool2d}}$<$ T $>$\+::backward (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \&}]{dout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+
+backward function in the network 
+
+backford function in the maxpool2d
+
+
 \begin{DoxyParams}{Parameters}
 {\em dout} & \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Matrix 
+Matrix
+\end{DoxyReturn}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em dout} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+xt\+::xarray$<$\+T$>$ 
 \end{DoxyReturn}
 
 
@@ -112,12 +198,31 @@ Implements \mbox{\hyperlink{class_layer_ac4c13a3a85bfdd4d7d4d18669e3299fe}{Layer
 xt\+::xarray$<$ T $>$ \mbox{\hyperlink{class_max_pool2d}{Max\+Pool2d}}$<$ T $>$\+::forward (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+
+forward function in the network 
+
+forward function in the maxpool2d
+
+
 \begin{DoxyParams}{Parameters}
 {\em in} & \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Matrix 
+Matrix
+\end{DoxyReturn}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & \+: input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+xt\+::xarray$<$\+T$>$ 
 \end{DoxyReturn}
 
 

@@ -80,7 +80,13 @@ $(function() {
 Inheritance diagram for Layer&lt; T &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_layer__inherit__graph.png" border="0" usemap="#_layer_3_01_t_01_4_inherit__map" alt="Inheritance graph"/></div>
-<!-- MAP 0 -->
+<map name="_layer_3_01_t_01_4_inherit__map" id="_layer_3_01_t_01_4_inherit__map">
+<area shape="rect"  title="the class of the layer" alt="" coords="190,5,275,32"/>
+<area shape="rect"  href="class_conv2d.html" title="Computes a 2&#45;D convolution given 4&#45;D input and filter tensors." alt="" coords="5,80,100,107"/>
+<area shape="rect"  href="class_linear.html" title="the layer class which inherits the linear class" alt="" coords="125,80,213,107"/>
+<area shape="rect"  href="class_max_pool2d.html" title="the class for the maxpool" alt="" coords="237,80,356,107"/>
+<area shape="rect"  href="class_re_l_u.html" title="ReLu Class, the rectifier is an activation function." alt="" coords="381,80,466,107"/>
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -99,8 +105,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac2c7d2238eb3d09a2198736c5b10f940"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the <a class="el" href="class_layer.html" title="the class of the layer">Layer</a> object.  <a href="#ac2c7d2238eb3d09a2198736c5b10f940">More...</a><br /></td></tr>
 <tr class="separator:ac2c7d2238eb3d09a2198736c5b10f940"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab15b665c86974b1cf1d7ba4e309cb0e5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_layer.html#a22b1e7286096aa62bd245536c8ebdaf1">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#ab15b665c86974b1cf1d7ba4e309cb0e5">forward</a> (const <a class="el" href="class_layer.html#a22b1e7286096aa62bd245536c8ebdaf1">Matrix</a> &amp;in)=0</td></tr>
+<tr class="memdesc:ab15b665c86974b1cf1d7ba4e309cb0e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">forward function in the network  <a href="#ab15b665c86974b1cf1d7ba4e309cb0e5">More...</a><br /></td></tr>
 <tr class="separator:ab15b665c86974b1cf1d7ba4e309cb0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4c13a3a85bfdd4d7d4d18669e3299fe"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_layer.html#a22b1e7286096aa62bd245536c8ebdaf1">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#ac4c13a3a85bfdd4d7d4d18669e3299fe">backward</a> (const <a class="el" href="class_layer.html#a22b1e7286096aa62bd245536c8ebdaf1">Matrix</a> &amp;dout)=0</td></tr>
+<tr class="memdesc:ac4c13a3a85bfdd4d7d4d18669e3299fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">backward function in the networ  <a href="#ac4c13a3a85bfdd4d7d4d18669e3299fe">More...</a><br /></td></tr>
 <tr class="separator:ac4c13a3a85bfdd4d7d4d18669e3299fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa0ec609fc7ef0053a362ea54d0f6f78"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_layer.html#a8313f42d2292d12dd5d40cc115636693">Shape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#afa0ec609fc7ef0053a362ea54d0f6f78">weight_shape</a> ()</td></tr>
 <tr class="separator:afa0ec609fc7ef0053a362ea54d0f6f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +272,8 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>backward function in the networ </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dout</td><td></td></tr>
@@ -329,6 +339,8 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>forward function in the network </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">in</td><td></td></tr>

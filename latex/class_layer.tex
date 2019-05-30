@@ -12,7 +12,13 @@ the class of the layer
 
 
 Inheritance diagram for Layer$<$ T $>$\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_layer__inherit__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -28,9 +34,9 @@ typedef Matrix\+::shape\+\_\+type \mbox{\hyperlink{class_layer_a8313f42d2292d12d
 virtual \mbox{\hyperlink{class_layer_ac2c7d2238eb3d09a2198736c5b10f940}{$\sim$\+Layer}} ()=default
 \begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_layer}{Layer}} object. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \mbox{\hyperlink{class_layer_ab15b665c86974b1cf1d7ba4e309cb0e5}{forward}} (const \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \&in)=0
-\item 
+\begin{DoxyCompactList}\small\item\em forward function in the network \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \mbox{\hyperlink{class_layer_ac4c13a3a85bfdd4d7d4d18669e3299fe}{backward}} (const \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \&dout)=0
-\item 
+\begin{DoxyCompactList}\small\item\em backward function in the networ \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_layer_a8313f42d2292d12dd5d40cc115636693}{Shape}} \mbox{\hyperlink{class_layer_afa0ec609fc7ef0053a362ea54d0f6f78}{weight\+\_\+shape}} ()
 \item 
 virtual \mbox{\hyperlink{class_layer_a8313f42d2292d12dd5d40cc115636693}{Shape}} \mbox{\hyperlink{class_layer_ad557254136784e9312ebb197b2bd3faf}{bias\+\_\+shape}} ()
@@ -125,6 +131,10 @@ Destroy the \mbox{\hyperlink{class_layer}{Layer}} object.
 virtual \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \mbox{\hyperlink{class_layer}{Layer}}$<$ T $>$\+::backward (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \&}]{dout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
+
+backward function in the networ 
+
+
 \begin{DoxyParams}{Parameters}
 {\em dout} & \\
 \hline
@@ -152,6 +162,10 @@ Shape
 \subsubsection{\texorpdfstring{forward()}{forward()}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 virtual \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \mbox{\hyperlink{class_layer}{Layer}}$<$ T $>$\+::forward (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_layer_a22b1e7286096aa62bd245536c8ebdaf1}{Matrix}} \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+forward function in the network 
 
 
 \begin{DoxyParams}{Parameters}
