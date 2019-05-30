@@ -110,7 +110,6 @@ void Dataset<T>::read_bin_images(const std::string& image_file,
   fclose(fp);
   // std::cout << "Read images " << image_file << " done.\n";
 }
-
 template <typename T>
 void Dataset<T>::read_bin_labels(const std::string& label_file,
                                  xt::xarray<T>& label) {
@@ -168,7 +167,7 @@ xt::xarray<T> load_images(const std::vector<std::string>& paths,
   bool not_reshaped = true;
   for (auto& path : paths) {
     xt::xarray<T> image = xt::transpose(xt::load_image(path), {2, 0, 1});
-    normalize(mean, std);
+//    normalize(mean, std);
     auto shape = image.shape();
     size_t C = shape[0];
     size_t H = shape[1];
