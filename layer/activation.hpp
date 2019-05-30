@@ -1,12 +1,13 @@
 /**
  * @file activation.hpp
- * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
- * @brief 
+ * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan
+ * Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
+ * @brief
  * @version 1.6.0
  * @date 2019-05-30
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 #pragma once
 
@@ -39,15 +40,15 @@ public:
   typedef xt::xarray<T> Matrix;
   typedef typename Matrix::shape_type Shape;
 
-/**
- * @brief Construct a new Re L U object
- * 
- */
+  /**
+   * @brief Construct a new Re L U object
+   *
+   */
   ReLU();
 
   /**
    * @brief Destroy the ReLU object
-   * 
+   *
    */
   virtual ~ReLU() = default;
 
@@ -63,9 +64,9 @@ public:
 
   /**
    * @brief backward function in the network
-   * 
-   * @param dout 
-   * @return Matrix 
+   *
+   * @param dout
+   * @return Matrix
    */
   virtual Matrix backward(const Matrix& dout) override;
 };

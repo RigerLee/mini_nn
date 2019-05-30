@@ -1,0 +1,218 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}mini\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}nn}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}mini\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}nn}{3}{chapter.2}
+\contentsline {chapter}{\numberline {3}Hierarchical Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Class Hierarchy}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Class Index}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Class List}{7}{section.4.1}
+\contentsline {chapter}{\numberline {5}File Index}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}File List}{9}{section.5.1}
+\contentsline {chapter}{\numberline {6}Class Documentation}{11}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conv2d$<$ T $>$ Class Template Reference}{11}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{12}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Member Typedef Documentation}{12}{subsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2.1}Matrix}{12}{subsubsection.6.1.2.1}
+\contentsline {subsubsection}{\numberline {6.1.2.2}Shape}{13}{subsubsection.6.1.2.2}
+\contentsline {subsection}{\numberline {6.1.3}Constructor \& Destructor Documentation}{13}{subsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.3.1}Conv2d()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [1/2]}}{13}{subsubsection.6.1.3.1}
+\contentsline {subsubsection}{\numberline {6.1.3.2}$\sim $Conv2d()}{13}{subsubsection.6.1.3.2}
+\contentsline {subsubsection}{\numberline {6.1.3.3}Conv2d()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [2/2]}}{13}{subsubsection.6.1.3.3}
+\contentsline {subsection}{\numberline {6.1.4}Member Function Documentation}{14}{subsection.6.1.4}
+\contentsline {subsubsection}{\numberline {6.1.4.1}backward()}{14}{subsubsection.6.1.4.1}
+\contentsline {subsubsection}{\numberline {6.1.4.2}forward()}{14}{subsubsection.6.1.4.2}
+\contentsline {subsubsection}{\numberline {6.1.4.3}get\_fan()}{15}{subsubsection.6.1.4.3}
+\contentsline {subsection}{\numberline {6.1.5}Member Data Documentation}{15}{subsection.6.1.5}
+\contentsline {subsubsection}{\numberline {6.1.5.1}in\_channels\_}{15}{subsubsection.6.1.5.1}
+\contentsline {subsubsection}{\numberline {6.1.5.2}kernel\_size\_}{16}{subsubsection.6.1.5.2}
+\contentsline {subsubsection}{\numberline {6.1.5.3}out\_channels\_}{16}{subsubsection.6.1.5.3}
+\contentsline {subsubsection}{\numberline {6.1.5.4}padding\_}{16}{subsubsection.6.1.5.4}
+\contentsline {subsubsection}{\numberline {6.1.5.5}stride\_}{16}{subsubsection.6.1.5.5}
+\contentsline {section}{\numberline {6.2}Layer$<$ T $>$ Class Template Reference}{16}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{17}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Member Typedef Documentation}{17}{subsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.2.1}Matrix}{18}{subsubsection.6.2.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2.2}Shape}{18}{subsubsection.6.2.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Constructor \& Destructor Documentation}{18}{subsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.3.1}Layer()}{18}{subsubsection.6.2.3.1}
+\contentsline {subsubsection}{\numberline {6.2.3.2}$\sim $Layer()}{18}{subsubsection.6.2.3.2}
+\contentsline {subsection}{\numberline {6.2.4}Member Function Documentation}{18}{subsection.6.2.4}
+\contentsline {subsubsection}{\numberline {6.2.4.1}backward()}{18}{subsubsection.6.2.4.1}
+\contentsline {subsubsection}{\numberline {6.2.4.2}bias\_shape()}{19}{subsubsection.6.2.4.2}
+\contentsline {subsubsection}{\numberline {6.2.4.3}forward()}{19}{subsubsection.6.2.4.3}
+\contentsline {subsubsection}{\numberline {6.2.4.4}get\_fan()}{19}{subsubsection.6.2.4.4}
+\contentsline {subsubsection}{\numberline {6.2.4.5}get\_type()}{20}{subsubsection.6.2.4.5}
+\contentsline {subsubsection}{\numberline {6.2.4.6}set\_bias()}{20}{subsubsection.6.2.4.6}
+\contentsline {subsubsection}{\numberline {6.2.4.7}set\_network()}{20}{subsubsection.6.2.4.7}
+\contentsline {subsubsection}{\numberline {6.2.4.8}set\_weight()}{21}{subsubsection.6.2.4.8}
+\contentsline {subsubsection}{\numberline {6.2.4.9}weight\_shape()}{21}{subsubsection.6.2.4.9}
+\contentsline {subsection}{\numberline {6.2.5}Member Data Documentation}{21}{subsection.6.2.5}
+\contentsline {subsubsection}{\numberline {6.2.5.1}b\_}{21}{subsubsection.6.2.5.1}
+\contentsline {subsubsection}{\numberline {6.2.5.2}db\_}{21}{subsubsection.6.2.5.2}
+\contentsline {subsubsection}{\numberline {6.2.5.3}din\_}{21}{subsubsection.6.2.5.3}
+\contentsline {subsubsection}{\numberline {6.2.5.4}dW\_}{22}{subsubsection.6.2.5.4}
+\contentsline {subsubsection}{\numberline {6.2.5.5}in\_}{22}{subsubsection.6.2.5.5}
+\contentsline {subsubsection}{\numberline {6.2.5.6}layer\_type\_}{22}{subsubsection.6.2.5.6}
+\contentsline {subsubsection}{\numberline {6.2.5.7}net\_}{22}{subsubsection.6.2.5.7}
+\contentsline {subsubsection}{\numberline {6.2.5.8}W\_}{22}{subsubsection.6.2.5.8}
+\contentsline {section}{\numberline {6.3}Linear$<$ T $>$ Class Template Reference}{23}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{24}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Member Typedef Documentation}{24}{subsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.2.1}Matrix}{24}{subsubsection.6.3.2.1}
+\contentsline {subsubsection}{\numberline {6.3.2.2}Shape}{24}{subsubsection.6.3.2.2}
+\contentsline {subsection}{\numberline {6.3.3}Constructor \& Destructor Documentation}{24}{subsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.3.1}Linear()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [1/2]}}{25}{subsubsection.6.3.3.1}
+\contentsline {subsubsection}{\numberline {6.3.3.2}$\sim $Linear()}{25}{subsubsection.6.3.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3.3}Linear()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [2/2]}}{25}{subsubsection.6.3.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Member Function Documentation}{25}{subsection.6.3.4}
+\contentsline {subsubsection}{\numberline {6.3.4.1}backward()}{26}{subsubsection.6.3.4.1}
+\contentsline {subsubsection}{\numberline {6.3.4.2}forward()}{26}{subsubsection.6.3.4.2}
+\contentsline {subsubsection}{\numberline {6.3.4.3}get\_fan()}{27}{subsubsection.6.3.4.3}
+\contentsline {subsection}{\numberline {6.3.5}Member Data Documentation}{27}{subsection.6.3.5}
+\contentsline {subsubsection}{\numberline {6.3.5.1}in\_dims\_}{28}{subsubsection.6.3.5.1}
+\contentsline {subsubsection}{\numberline {6.3.5.2}in\_reshape\_}{28}{subsubsection.6.3.5.2}
+\contentsline {subsubsection}{\numberline {6.3.5.3}out\_dims\_}{28}{subsubsection.6.3.5.3}
+\contentsline {section}{\numberline {6.4}Loss$<$ T $>$ Class Template Reference}{28}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Member Typedef Documentation}{29}{subsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.1.1}Matrix}{29}{subsubsection.6.4.1.1}
+\contentsline {subsubsection}{\numberline {6.4.1.2}Shape}{29}{subsubsection.6.4.1.2}
+\contentsline {subsection}{\numberline {6.4.2}Constructor \& Destructor Documentation}{29}{subsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.2.1}Loss()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [1/2]}}{29}{subsubsection.6.4.2.1}
+\contentsline {subsubsection}{\numberline {6.4.2.2}Loss()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [2/2]}}{29}{subsubsection.6.4.2.2}
+\contentsline {subsubsection}{\numberline {6.4.2.3}$\sim $Loss()}{30}{subsubsection.6.4.2.3}
+\contentsline {subsection}{\numberline {6.4.3}Member Function Documentation}{30}{subsection.6.4.3}
+\contentsline {subsubsection}{\numberline {6.4.3.1}CrossEntropyLoss()}{30}{subsubsection.6.4.3.1}
+\contentsline {subsubsection}{\numberline {6.4.3.2}get\_grad()}{31}{subsubsection.6.4.3.2}
+\contentsline {subsubsection}{\numberline {6.4.3.3}get\_type()}{31}{subsubsection.6.4.3.3}
+\contentsline {subsection}{\numberline {6.4.4}Member Data Documentation}{31}{subsection.6.4.4}
+\contentsline {subsubsection}{\numberline {6.4.4.1}dscores\_}{31}{subsubsection.6.4.4.1}
+\contentsline {subsubsection}{\numberline {6.4.4.2}loss\_type\_}{31}{subsubsection.6.4.4.2}
+\contentsline {subsubsection}{\numberline {6.4.4.3}scores\_}{31}{subsubsection.6.4.4.3}
+\contentsline {section}{\numberline {6.5}Max\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Pool2d$<$ T $>$ Class Template Reference}{32}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Detailed Description}{33}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Member Typedef Documentation}{33}{subsection.6.5.2}
+\contentsline {subsubsection}{\numberline {6.5.2.1}Matrix}{33}{subsubsection.6.5.2.1}
+\contentsline {subsubsection}{\numberline {6.5.2.2}Shape}{33}{subsubsection.6.5.2.2}
+\contentsline {subsection}{\numberline {6.5.3}Constructor \& Destructor Documentation}{33}{subsection.6.5.3}
+\contentsline {subsubsection}{\numberline {6.5.3.1}MaxPool2d()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [1/2]}}{33}{subsubsection.6.5.3.1}
+\contentsline {subsubsection}{\numberline {6.5.3.2}$\sim $MaxPool2d()}{34}{subsubsection.6.5.3.2}
+\contentsline {subsubsection}{\numberline {6.5.3.3}MaxPool2d()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [2/2]}}{34}{subsubsection.6.5.3.3}
+\contentsline {subsection}{\numberline {6.5.4}Member Function Documentation}{34}{subsection.6.5.4}
+\contentsline {subsubsection}{\numberline {6.5.4.1}backward()}{34}{subsubsection.6.5.4.1}
+\contentsline {subsubsection}{\numberline {6.5.4.2}forward()}{35}{subsubsection.6.5.4.2}
+\contentsline {subsection}{\numberline {6.5.5}Member Data Documentation}{36}{subsection.6.5.5}
+\contentsline {subsubsection}{\numberline {6.5.5.1}kernel\_size\_}{36}{subsubsection.6.5.5.1}
+\contentsline {subsubsection}{\numberline {6.5.5.2}padding\_}{36}{subsubsection.6.5.5.2}
+\contentsline {subsubsection}{\numberline {6.5.5.3}stride\_}{36}{subsubsection.6.5.5.3}
+\contentsline {section}{\numberline {6.6}Network$<$ T $>$ Class Template Reference}{36}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Detailed Description}{37}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Member Typedef Documentation}{37}{subsection.6.6.2}
+\contentsline {subsubsection}{\numberline {6.6.2.1}Matrix}{37}{subsubsection.6.6.2.1}
+\contentsline {subsubsection}{\numberline {6.6.2.2}Shape}{37}{subsubsection.6.6.2.2}
+\contentsline {subsection}{\numberline {6.6.3}Constructor \& Destructor Documentation}{37}{subsection.6.6.3}
+\contentsline {subsubsection}{\numberline {6.6.3.1}Network()}{38}{subsubsection.6.6.3.1}
+\contentsline {subsubsection}{\numberline {6.6.3.2}$\sim $Network()}{38}{subsubsection.6.6.3.2}
+\contentsline {subsection}{\numberline {6.6.4}Member Function Documentation}{38}{subsection.6.6.4}
+\contentsline {subsubsection}{\numberline {6.6.4.1}backward()}{38}{subsubsection.6.6.4.1}
+\contentsline {subsubsection}{\numberline {6.6.4.2}forward()}{38}{subsubsection.6.6.4.2}
+\contentsline {subsubsection}{\numberline {6.6.4.3}get\_optimizer()}{38}{subsubsection.6.6.4.3}
+\contentsline {subsubsection}{\numberline {6.6.4.4}operator$<$$<$()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [1/4]}}{38}{subsubsection.6.6.4.4}
+\contentsline {subsubsection}{\numberline {6.6.4.5}operator$<$$<$()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [2/4]}}{39}{subsubsection.6.6.4.5}
+\contentsline {subsubsection}{\numberline {6.6.4.6}operator$<$$<$()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [3/4]}}{39}{subsubsection.6.6.4.6}
+\contentsline {subsubsection}{\numberline {6.6.4.7}operator$<$$<$()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [4/4]}}{39}{subsubsection.6.6.4.7}
+\contentsline {subsubsection}{\numberline {6.6.4.8}predict()}{39}{subsubsection.6.6.4.8}
+\contentsline {subsubsection}{\numberline {6.6.4.9}set\_optimizer()}{39}{subsubsection.6.6.4.9}
+\contentsline {subsection}{\numberline {6.6.5}Member Data Documentation}{39}{subsection.6.6.5}
+\contentsline {subsubsection}{\numberline {6.6.5.1}layers\_}{39}{subsubsection.6.6.5.1}
+\contentsline {subsubsection}{\numberline {6.6.5.2}loss\_}{40}{subsubsection.6.6.5.2}
+\contentsline {subsubsection}{\numberline {6.6.5.3}optimizer\_}{40}{subsubsection.6.6.5.3}
+\contentsline {section}{\numberline {6.7}Optimizer$<$ T $>$ Class Template Reference}{40}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Member Typedef Documentation}{41}{subsection.6.7.1}
+\contentsline {subsubsection}{\numberline {6.7.1.1}Matrix}{41}{subsubsection.6.7.1.1}
+\contentsline {subsubsection}{\numberline {6.7.1.2}Shape}{41}{subsubsection.6.7.1.2}
+\contentsline {subsection}{\numberline {6.7.2}Constructor \& Destructor Documentation}{41}{subsection.6.7.2}
+\contentsline {subsubsection}{\numberline {6.7.2.1}Optimizer()}{41}{subsubsection.6.7.2.1}
+\contentsline {subsubsection}{\numberline {6.7.2.2}$\sim $Optimizer()}{41}{subsubsection.6.7.2.2}
+\contentsline {subsection}{\numberline {6.7.3}Member Function Documentation}{41}{subsection.6.7.3}
+\contentsline {subsubsection}{\numberline {6.7.3.1}update()}{42}{subsubsection.6.7.3.1}
+\contentsline {subsection}{\numberline {6.7.4}Member Data Documentation}{42}{subsection.6.7.4}
+\contentsline {subsubsection}{\numberline {6.7.4.1}lr\_}{42}{subsubsection.6.7.4.1}
+\contentsline {section}{\numberline {6.8}Re\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}LU$<$ T $>$ Class Template Reference}{42}{section.6.8}
+\contentsline {subsection}{\numberline {6.8.1}Detailed Description}{43}{subsection.6.8.1}
+\contentsline {subsection}{\numberline {6.8.2}Member Typedef Documentation}{44}{subsection.6.8.2}
+\contentsline {subsubsection}{\numberline {6.8.2.1}Matrix}{44}{subsubsection.6.8.2.1}
+\contentsline {subsubsection}{\numberline {6.8.2.2}Shape}{44}{subsubsection.6.8.2.2}
+\contentsline {subsection}{\numberline {6.8.3}Constructor \& Destructor Documentation}{44}{subsection.6.8.3}
+\contentsline {subsubsection}{\numberline {6.8.3.1}ReLU()}{44}{subsubsection.6.8.3.1}
+\contentsline {subsubsection}{\numberline {6.8.3.2}$\sim $ReLU()}{45}{subsubsection.6.8.3.2}
+\contentsline {subsection}{\numberline {6.8.4}Member Function Documentation}{45}{subsection.6.8.4}
+\contentsline {subsubsection}{\numberline {6.8.4.1}backward()}{45}{subsubsection.6.8.4.1}
+\contentsline {subsubsection}{\numberline {6.8.4.2}forward()}{46}{subsubsection.6.8.4.2}
+\contentsline {section}{\numberline {6.9}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}GD$<$ T $>$ Class Template Reference}{46}{section.6.9}
+\contentsline {subsection}{\numberline {6.9.1}Member Typedef Documentation}{47}{subsection.6.9.1}
+\contentsline {subsubsection}{\numberline {6.9.1.1}Matrix}{48}{subsubsection.6.9.1.1}
+\contentsline {subsubsection}{\numberline {6.9.1.2}Shape}{48}{subsubsection.6.9.1.2}
+\contentsline {subsection}{\numberline {6.9.2}Constructor \& Destructor Documentation}{48}{subsection.6.9.2}
+\contentsline {subsubsection}{\numberline {6.9.2.1}SGD()}{48}{subsubsection.6.9.2.1}
+\contentsline {subsubsection}{\numberline {6.9.2.2}$\sim $SGD()}{48}{subsubsection.6.9.2.2}
+\contentsline {subsection}{\numberline {6.9.3}Member Function Documentation}{48}{subsection.6.9.3}
+\contentsline {subsubsection}{\numberline {6.9.3.1}update()}{48}{subsubsection.6.9.3.1}
+\contentsline {subsection}{\numberline {6.9.4}Member Data Documentation}{49}{subsection.6.9.4}
+\contentsline {subsubsection}{\numberline {6.9.4.1}momentum\_}{49}{subsubsection.6.9.4.1}
+\contentsline {subsubsection}{\numberline {6.9.4.2}weight\_decay\_}{49}{subsubsection.6.9.4.2}
+\contentsline {chapter}{\numberline {7}File Documentation}{51}{chapter.7}
+\contentsline {section}{\numberline {7.1}layer/activation.hpp File Reference}{51}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Detailed Description}{52}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}layer/activation\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}impl.hpp File Reference}{53}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Detailed Description}{53}{subsection.7.2.1}
+\contentsline {section}{\numberline {7.3}layer/convolution.hpp File Reference}{54}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Detailed Description}{55}{subsection.7.3.1}
+\contentsline {section}{\numberline {7.4}layer/convolution\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}impl.hpp File Reference}{55}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Detailed Description}{56}{subsection.7.4.1}
+\contentsline {section}{\numberline {7.5}layer/layer\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}base.hpp File Reference}{57}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Detailed Description}{58}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Enumeration Type Documentation}{58}{subsection.7.5.2}
+\contentsline {subsubsection}{\numberline {7.5.2.1}LAYER\_TYPE}{58}{subsubsection.7.5.2.1}
+\contentsline {section}{\numberline {7.6}layer/linear.hpp File Reference}{58}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}Detailed Description}{59}{subsection.7.6.1}
+\contentsline {section}{\numberline {7.7}layer/linear\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}impl.hpp File Reference}{60}{section.7.7}
+\contentsline {subsection}{\numberline {7.7.1}Detailed Description}{61}{subsection.7.7.1}
+\contentsline {section}{\numberline {7.8}layer/pooling.hpp File Reference}{62}{section.7.8}
+\contentsline {subsection}{\numberline {7.8.1}Detailed Description}{63}{subsection.7.8.1}
+\contentsline {section}{\numberline {7.9}layer/pooling\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}impl.hpp File Reference}{63}{section.7.9}
+\contentsline {subsection}{\numberline {7.9.1}Detailed Description}{64}{subsection.7.9.1}
+\contentsline {section}{\numberline {7.10}loader/data\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}loader.hpp File Reference}{64}{section.7.10}
+\contentsline {subsection}{\numberline {7.10.1}Detailed Description}{65}{subsection.7.10.1}
+\contentsline {subsection}{\numberline {7.10.2}Function Documentation}{65}{subsection.7.10.2}
+\contentsline {subsubsection}{\numberline {7.10.2.1}image\_normalize()}{65}{subsubsection.7.10.2.1}
+\contentsline {subsubsection}{\numberline {7.10.2.2}load\_images()}{65}{subsubsection.7.10.2.2}
+\contentsline {section}{\numberline {7.11}loader/model\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}loader.hpp File Reference}{65}{section.7.11}
+\contentsline {section}{\numberline {7.12}loss/loss.hpp File Reference}{65}{section.7.12}
+\contentsline {subsection}{\numberline {7.12.1}Enumeration Type Documentation}{66}{subsection.7.12.1}
+\contentsline {subsubsection}{\numberline {7.12.1.1}LOSS\_TYPE}{66}{subsubsection.7.12.1.1}
+\contentsline {section}{\numberline {7.13}loss/loss\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}impl.hpp File Reference}{67}{section.7.13}
+\contentsline {subsection}{\numberline {7.13.1}Detailed Description}{67}{subsection.7.13.1}
+\contentsline {section}{\numberline {7.14}network/common\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}header.hpp File Reference}{67}{section.7.14}
+\contentsline {section}{\numberline {7.15}network/init.hpp File Reference}{68}{section.7.15}
+\contentsline {subsection}{\numberline {7.15.1}Detailed Description}{69}{subsection.7.15.1}
+\contentsline {subsection}{\numberline {7.15.2}Function Documentation}{70}{subsection.7.15.2}
+\contentsline {subsubsection}{\numberline {7.15.2.1}kaiming\_normal()}{70}{subsubsection.7.15.2.1}
+\contentsline {subsubsection}{\numberline {7.15.2.2}kaiming\_uniform()}{70}{subsubsection.7.15.2.2}
+\contentsline {section}{\numberline {7.16}network/network.hpp File Reference}{71}{section.7.16}
+\contentsline {section}{\numberline {7.17}network/network\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}impl.hpp File Reference}{73}{section.7.17}
+\contentsline {section}{\numberline {7.18}network/utils.hpp File Reference}{73}{section.7.18}
+\contentsline {subsection}{\numberline {7.18.1}Function Documentation}{74}{subsection.7.18.1}
+\contentsline {subsubsection}{\numberline {7.18.1.1}cout\_shape()}{74}{subsubsection.7.18.1.1}
+\contentsline {section}{\numberline {7.19}optimizer/optimizer.hpp File Reference}{74}{section.7.19}
+\contentsline {section}{\numberline {7.20}optimizer/optimizer\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}base.hpp File Reference}{75}{section.7.20}
+\contentsline {section}{\numberline {7.21}optimizer/optimizer\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}impl.hpp File Reference}{77}{section.7.21}
+\contentsline {section}{\numberline {7.22}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}M\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}md File Reference}{77}{section.7.22}
+\contentsline {section}{\numberline {7.23}test/test\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}layer.cpp File Reference}{77}{section.7.23}
+\contentsline {subsection}{\numberline {7.23.1}Function Documentation}{78}{subsection.7.23.1}
+\contentsline {subsubsection}{\numberline {7.23.1.1}main()}{78}{subsubsection.7.23.1.1}
+\contentsline {section}{\numberline {7.24}test/test\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}loader.cpp File Reference}{78}{section.7.24}
+\contentsline {subsection}{\numberline {7.24.1}Function Documentation}{79}{subsection.7.24.1}
+\contentsline {subsubsection}{\numberline {7.24.1.1}main()}{79}{subsubsection.7.24.1.1}
+\contentsline {section}{\numberline {7.25}test/test\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}net.cpp File Reference}{79}{section.7.25}
+\contentsline {subsection}{\numberline {7.25.1}Function Documentation}{79}{subsection.7.25.1}
+\contentsline {subsubsection}{\numberline {7.25.1.1}main()}{79}{subsubsection.7.25.1.1}
+\contentsline {chapter}{Index}{81}{section*.101}
