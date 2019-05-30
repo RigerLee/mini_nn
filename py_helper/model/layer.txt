@@ -1,0 +1,9 @@
+Conv2d 1 20 5 1 float32 ./model/0.npy ./model/1.npy
+ReLU
+MaxPool2d
+Conv2d 20 50 5 1 float32 ./model/2.npy ./model/3.npy
+ReLU
+MaxPool2d
+Linear 800 500 float32 ./model/4.npy ./model/5.npy
+ReLU
+Linear 500 10 float32 ./model/6.npy ./model/7.npy
