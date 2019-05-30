@@ -1,9 +1,7 @@
-# add_executable(
-#   Test_Layer
-#   test_layer.cpp
-# )
-#
-# target_link_libraries(Test_Layer ${BLAS_LIBRARIES} ${LAPACK_LIBRARIES})
+add_executable(
+  Test_Layer
+  test_layer.cpp
+)
 
 add_executable(
         Test_Net
@@ -20,6 +18,7 @@ add_executable(
         test_mnist.cpp
 )
 
+target_link_libraries(Test_Layer ${BLAS_LIBRARIES} ${LAPACK_LIBRARIES})
 target_link_libraries(Test_Net ${BLAS_LIBRARIES} ${LAPACK_LIBRARIES})
 target_link_libraries(Test_Loader ${BLAS_LIBRARIES} ${LAPACK_LIBRARIES} ${OIIO})
 target_link_libraries(Test_MNIST ${BLAS_LIBRARIES} ${LAPACK_LIBRARIES} ${OIIO})

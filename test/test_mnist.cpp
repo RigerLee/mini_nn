@@ -6,14 +6,14 @@ int main() {
   Dataset<double> loader;
   loader.MNIST("./data/");
   loader.normalize({0.1307}, {0.3081});
-  auto train = loader.loader("train", 64);
+  auto train = loader.loader("train", 640);
   auto test = loader.loader("test", 1000);
 
   std::cout << "start" << std::endl;
 
   Network<double> net;
 
-  net.set_optimizer(new SGD<double>(0.01, 0.5));
+  net.set_optimizer(new SGD<double>(0.001, 0.5));
 
   net << new Conv2d<double>(1, 20, 5, 1) << new ReLU<double>()
       << new MaxPool2d<double>(2, 2) << new Conv2d<double>(20, 50, 5, 1)
@@ -24,7 +24,7 @@ int main() {
   //      << new Linear<double>(500, 256) << new ReLU<double>()
   //      << new Linear<double>(256, 10) << new Loss<double>(CROSS_ENTROPY);
   for (int i = 0; i < 10; ++i) {
-    for (int j = 0; j < train.size(); ++j) {
+    for (size_t j = 0; j < train.size(); ++j) {
       auto& pair = train[j];
       auto& data = pair.first;
       auto& target = pair.second;

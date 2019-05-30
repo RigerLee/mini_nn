@@ -1,17 +1,17 @@
 /**
  * @file test_loader.cpp
- * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
+ * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan
+ * Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
  * @brief to test the loader  whether worked out or not
  * @version 1.6.0
  * @date 2019-05-30
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 #include "data_loader.hpp"
 
 #include "model_loader.hpp"
-#include "xtensor/xsort.hpp"
 
 using namespace std;
 /**

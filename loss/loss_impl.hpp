@@ -10,11 +10,10 @@
  * @date 2019-05-26
  */
 
-
 /**
  * @brief Construct a new Loss< T>:: Loss object
- * 
- * @tparam T 
+ *
+ * @tparam T
  */
 template <typename T>
 Loss<T>::Loss() {
@@ -27,23 +26,22 @@ Loss<T>::Loss() {
 
 /**
  * @brief Construct a new Loss< T>:: Loss object
- * 
- * @tparam T 
- * @param loss_type 
+ *
+ * @tparam T
+ * @param loss_type
  */
 template <typename T>
 Loss<T>::Loss(LOSS_TYPE loss_type) {
   loss_type_ = loss_type;
 }
 
-
 /**
- * @brief 
- * 
- * @tparam T 
+ * @brief
+ *
+ * @tparam T
  * @param scores : the score to evaluate the model
  * @param target : the aim
- * @return T 
+ * @return T
  */
 template <typename T>
 T Loss<T>::CrossEntropyLoss(const xt::xarray<T>& scores,
@@ -80,5 +78,6 @@ T Loss<T>::CrossEntropyLoss(const xt::xarray<T>& scores,
   // TODO: need some optimization here, may cause overflow
   dscores_ = xt::exp(scores) / exp_sum;
   xt::index_view(dscores_, indexs) += -1;
+  dscores_ /= scores.shape(0);
   return xt::sum(loss)() / scores.shape(0);
 }
