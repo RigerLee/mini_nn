@@ -73,10 +73,10 @@ xt::xarray<T> MaxPool2d<T>::forward(const xt::xarray<T>& in) {
 }
 /**
  * @brief backford function in the maxpool2d
- * 
- * @tparam T 
- * @param dout 
- * @return xt::xarray<T> 
+ *
+ * @tparam T
+ * @param dout the derivative of the function
+ * @return xt::xarray<T>
  */
 template <typename T>
 xt::xarray<T> MaxPool2d<T>::backward(const xt::xarray<T>& dout) {

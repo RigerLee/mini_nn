@@ -60,7 +60,7 @@ void parse_header(FILE* fp, size_t& word_size, std::vector<size_t>& shape) {
  * @brief load nnumpy
  * 
  * @tparam T 
- * @param fp 
+ * @param fp foreward pass
  * @param out 
  */
 template <typename T>
@@ -81,7 +81,13 @@ LAYER_TYPE str_to_type(const std::string& in) {
   if (in == "ReLU") return ACT;
   return POOL;
 }
-
+/**
+ * @brief load the model
+ * 
+ * @tparam T 
+ * @param net the net 
+ * @param file_path the path model stored in
+ */
 template <typename T>
 void load_model(Network<T>& net, std::string file_path) {
   std::ifstream in(file_path);
