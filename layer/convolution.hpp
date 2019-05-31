@@ -37,7 +37,7 @@ public:
   virtual ~Conv2d() = default;
 
   /**
-   * @brief Construct a new Conv 2d< T>:: Conv 2d object
+   * @brief Construct a new Conv2d object
    *
    * @tparam T
    * @param in_channels
@@ -66,7 +66,6 @@ public:
   /**
    * @brief forward function in the network
    *
-   * @tparam T
    * @param in     the input matrix
    * @return       the output matrix
    * @details

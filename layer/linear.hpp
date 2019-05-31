@@ -27,7 +27,6 @@ public:
   Linear() = default;
   virtual ~Linear() = default;
 
-
   /**
    * @brief Construct a new Linear object
    *
@@ -45,7 +44,6 @@ public:
    */
   virtual Matrix forward(const Matrix& in) override;
 
-
   /**
    * @brief backward in the network
    *
@@ -56,9 +54,9 @@ public:
 
   // for init
   /**
-   * @brief Get the fan object
+   * @brief Get the fan
    *
-   * @return size_t
+   * @return the fan
    */
   virtual size_t get_fan();
 

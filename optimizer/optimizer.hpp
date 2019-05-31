@@ -81,9 +81,9 @@ public:
   /**
    * @brief Construct a new SGD object
    *
-   * @param lr init with 0.
-   * @param momentum init with 1
-   * @param weight_decay default is 0
+   * @param lr LR, default 0.1
+   * @param momentum momentum, default 1.
+   * @param weight_decay weight decay, default 0.
    */
   SGD(T lr = 0.1, T momentum = 1., T weight_decay = 0.);
 
@@ -96,8 +96,8 @@ public:
   /**
    * @brief update the network
    *
-   * @param target
-   * @param grad
+   * @param target    the target matrix
+   * @param grad      the gradient matrix
    */
   virtual void update(Matrix& target, const Matrix& grad) override;
 

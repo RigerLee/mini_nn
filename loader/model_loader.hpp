@@ -1,12 +1,12 @@
 /**
  * @file model_loader.hpp
  * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
- * @brief load the model 
+ * @brief load the model
  * @version 1.6.0
  * @date 2019-05-30
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 #include <network.hpp>
 
@@ -22,10 +22,10 @@
 
 /**
  * @brief parse function
- * 
- * @param fp :forward pass
- * @param word_size : the size of the word
- * @param shape : the shape of the function
+ *
+ * @param fp forward pass
+ * @param word_size the size of the word
+ * @param shape the shape of the function
  */
 void parse_header(FILE* fp, size_t& word_size, std::vector<size_t>& shape) {
   char buffer[256];
@@ -57,11 +57,11 @@ void parse_header(FILE* fp, size_t& word_size, std::vector<size_t>& shape) {
 }
 
 /**
- * @brief load nnumpy
- * 
- * @tparam T 
+ * @brief load numpy
+ *
+ * @tparam T
  * @param fp foreward pass
- * @param out 
+ * @param out store the numpy matrix to this variable
  */
 template <typename T>
 void load_npy(FILE* fp, std::vector<T>& out) {
@@ -83,9 +83,9 @@ LAYER_TYPE str_to_type(const std::string& in) {
 }
 /**
  * @brief load the model
- * 
- * @tparam T 
- * @param net the net 
+ *
+ * @tparam T
+ * @param net the net
  * @param file_path the path model stored in
  */
 template <typename T>

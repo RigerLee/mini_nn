@@ -1,6 +1,7 @@
 /**
  * @file layer_base.hpp
- * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
+ * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan
+ * Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
  * @brief the attribute of the base of the layter
  * @version 1.6.0
  * @date 2019-05-30

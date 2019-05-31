@@ -4,9 +4,9 @@
  * @brief Init the network. Containing two funcitons: kaiming_normal and kaiming_uniform
  * @version 1.6.0
  * @date 2019-05-30
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 #pragma once
 
@@ -17,8 +17,8 @@
  * @brief kaiming normal distribution
  *
  * @tparam T
- * @param layer: the layer of the network
- * @param mode: how to convolution
+ * @param layer the layer of the network
+ * @param mode the mode of convolution
  * @details
  * According to the method described by He, K et al. in 'Delving deep into
  * rectifiers: Surpassing human-level performance on ImageNet classification' in
@@ -45,8 +45,8 @@ void kaiming_normal(Layer<T>& layer, std::string mode = "ReLU") {
  * @brief kaiming uniform distribution
  *
  * @tparam T
- * @param layer: the layer of the network
- * @param mode: how to convolution
+ * @param layer the layer of the network
+ * @param mode the mode of convolution
  * @details
  * According to the method described by He, K et al. in 'Delving deep into
  * rectifiers: Surpassing human-level performance on ImageNet classification' in

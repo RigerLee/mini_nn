@@ -20,7 +20,7 @@
 #include "utils.hpp"
 
 /**
- * @brief Construct a new Dataset< T>:: Dataset object
+ * @brief Class of the dataset
  *
  * @tparam T
  * @param shuffle the data
