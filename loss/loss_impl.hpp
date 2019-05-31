@@ -10,11 +10,6 @@
  * @date 2019-05-26
  */
 
-/**
- * @brief Construct a new Loss< T>:: Loss object
- *
- * @tparam T
- */
 template <typename T>
 Loss<T>::Loss() {
   /**
@@ -24,25 +19,11 @@ Loss<T>::Loss() {
   loss_type_ = CROSS_ENTROPY;
 }
 
-/**
- * @brief Construct a new Loss< T>:: Loss object
- *
- * @tparam T
- * @param loss_type
- */
 template <typename T>
 Loss<T>::Loss(LOSS_TYPE loss_type) {
   loss_type_ = loss_type;
 }
 
-/**
- * @brief
- *
- * @tparam T
- * @param scores : the score to evaluate the model
- * @param target : the aim
- * @return T
- */
 template <typename T>
 T Loss<T>::CrossEntropyLoss(const xt::xarray<T>& scores,
                             const xt::xarray<T>& target) {

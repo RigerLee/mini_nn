@@ -14,46 +14,9 @@
 #define my_max(a, b) (((a) > (b)) ? (a) : (b))
 #define my_min(a, b) (((a) < (b)) ? (a) : (b))
 
-/**
- * @brief Construct a new Dataset< T>:: Dataset object
- *
- * @tparam T
- * @param shuffle the data
- * @details Shuffling data serves the purpose of reducing variance and making
-sure that models remain general and overfit less.
-
-The obvious case where you'd shuffle your data is if your data is sorted by
-their class/target. Here, you will want to shuffle to make sure that your
-training/test/validation sets are representative of the overall distribution of
-the data.
-
-For batch gradient descent, the same logic applies. The idea behind batch
-gradient descent is that by calculating the gradient on a single batch, you will
-usually get a fairly good estimate of the "true" gradient. That way, you save
-computation time by not having to calculate the "true" gradient over the entire
-dataset every time.
-
-You want to shuffle your data after each epoch because you will always have the
-risk to create batches that are not representative of the overall dataset, and
-therefore, your estimate of the gradient will be off. Shuffling your data after
-each epoch ensures that you will not be "stuck" with too many bad batches.
-
-In regular stochastic gradient descent, when each batch has size 1, you still
-want to shuffle your data after each epoch to keep your learning general.
-Indeed, if data point 17 is always used after data point 16, its own gradient
-will be biased with whatever updates data point 16 is making on the model. By
-shuffling your data, you ensure that each data point creates an "independent"
-change on the model, without being biased by the same points before them.
- */
 template <typename T>
 Dataset<T>::Dataset(bool shuffle) : shuffle_(shuffle) {}
 
-/**
- * @brief read the MNIST dataset
- *
- * @tparam T
- * @param path the path stored the dataset
- */
 template <typename T>
 void Dataset<T>::MNIST(const std::string& path) {
   std::string train_image = path + "train-images-idx3-ubyte";
@@ -112,12 +75,6 @@ std::vector<std::pair<xt::xarray<T>, xt::xarray<T>>> Dataset<T>::loader(
   return out;
 }
 
-/**
- * @brief read the int, store in the output
- *
- * @param in
- * @return int
- */
 int read_int(char* in) {
   int out;
   char* p = (char*)&out;
@@ -129,13 +86,6 @@ int read_int(char* in) {
   return out;
 }
 
-/**
- * @brief read images from binary form
- *
- * @tparam T
- * @param image_file the file  which stores the image
- * @param data       the data
- */
 template <typename T>
 void Dataset<T>::read_bin_images(const std::string& image_file,
                                  xt::xarray<T>& data) {
@@ -169,13 +119,6 @@ void Dataset<T>::read_bin_images(const std::string& image_file,
   // std::cout << "Read images " << image_file << " done.\n";
 }
 
-/**
- * @brief read labels from binary form
- *
- * @tparam T
- * @param label_file the file which is labelled
- * @param label  the label
- */
 template <typename T>
 void Dataset<T>::read_bin_labels(const std::string& label_file,
                                  xt::xarray<T>& label) {
@@ -229,15 +172,6 @@ void data_normalize(xt::xarray<T>& data,
     xt::view(stdev, xt::newaxis(), xt::all(), xt::newaxis(), xt::newaxis());
 }
 
-/**
- * @brief normalize function for the train and test data
- *
- * @tparam T
- * @param mean:  mean
- * @param stdev: standard deviation
- * @details Average the image according to the given mean and standard
- * deviation, by calling data_normalize
- */
 template <typename T>
 void Dataset<T>::normalize(const xt::xarray<T>& mean,
                            const xt::xarray<T>& stdev) {

@@ -31,28 +31,18 @@ logistic regression) and its more practical counterpart, the hyperbolic
 tangent. The rectifier is, as of 2017, the most popular activation function for
 deep neural networks.
  */
-template <typename T> ReLU<T>::ReLU() { this->layer_type_ = ACT; }
+template <typename T>
+ReLU<T>::ReLU() {
+  this->layer_type_ = ACT;
+}
 
-/**
- * @brief forward function
- *
- * @tparam T
- * @param in the input 
- * @return xt::xarray<T>
- */
-template <typename T> xt::xarray<T> ReLU<T>::forward(const xt::xarray<T> &in) {
+template <typename T>
+xt::xarray<T> ReLU<T>::forward(const xt::xarray<T> &in) {
   this->in_ = in;
   Matrix out = xt::maximum(0, in);
   return out;
 }
 
-/**
- * @brief backward function in the network
- *
- * @tparam T
- * @param dout 
- * @return xt::xarray<T>
- */
 template <typename T>
 xt::xarray<T> ReLU<T>::backward(const xt::xarray<T> &dout) {
   this->din_ = xt::greater(this->in_, 0) * dout;

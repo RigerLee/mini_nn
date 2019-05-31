@@ -1,12 +1,13 @@
 /**
  * @file convolution.hpp
- * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
- * @brief  the attribute of the convolution 
+ * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan
+ * Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
+ * @brief  the attribute of the convolution
  * @version 1.6.0
  * @date 2019-05-30
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 
 #pragma once
@@ -31,16 +32,16 @@ class Conv2d : public Layer<T> {
 public:
   typedef xt::xarray<T> Matrix;
   typedef typename Matrix::shape_type Shape;
-  
+
   /**
    * @brief Construct a new Conv 2d object
-   * 
+   *
    */
   Conv2d() = default;
 
   /**
    * @brief Destroy the Conv 2d object
-   * 
+   *
    */
   virtual ~Conv2d() = default;
 
@@ -54,40 +55,40 @@ public:
    * pictures of a batch during training, the height of the picture, the width
    * of the image, the number of image channels. ], note that this is a 4D
    * Tensor,
-   * @param out_channels:
-   * @param kernel_size size of the kernel
-   * @param stride The convolution step in each dimension of the image, this is
-   * a one-dimensional vector, with length 4
-   * @param padding  This value determines the different convolution methods
+   * @param out_channels : The number of output channels.
+   * @param kernel_size : size of the kernel
+   * @param stride : The convolution step in each dimension of the image, this
+   * is a one-dimensional vector, with length 4
+   * @param padding : This value determines the different convolution methods
    */
   Conv2d(size_t in_channels,
          size_t out_channels,
          size_t kernel_size = 3,
          size_t stride = 1,
          size_t padding = 0);
+
   /**
-   * @brief
+   * @brief forward function in the network
    *
    * @tparam T
-   * @param in :input for the network
-   * @return xt::xarray<T>
+   * @param in : the input matrix
+   * @return Matrix : the output matrix
+   * @details
    */
   virtual Matrix forward(const Matrix& in) override;
 
   /**
-   * @brief
+   * @brief backward function in the network
    *
-   * @tparam T
-   * @param dout : the backward input
-   * @return xt::xarray<T>
+   * @param dout : the input matrix
+   * @return Matrix : the output matrix
    */
   virtual Matrix backward(const Matrix& dout) override;
 
-  // for init
   /**
    * @brief Get the fan object
-   * 
-   * @return size_t 
+   *
+   * @return size_t
    */
   virtual size_t get_fan();
 

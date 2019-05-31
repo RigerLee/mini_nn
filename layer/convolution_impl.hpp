@@ -4,28 +4,13 @@
  * @brief implementation for the convolution
  * @version 1.6.0
  * @date 2019-05-30
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 
 #include <network.hpp>
 
-/**
- * @brief Construct a new Conv 2d< T>:: Conv 2d object
- *
- * @tparam T
- * @param in_channels :   It refers to the input image that needs to be convolved. It
- * is required to be a Tensor with a shape such as [batch, in_height, in_width,
- * in_channels]. The specific meaning is [the number of pictures of a batch
- * during training, the height of the picture, the width of the image, the
- * number of image channels. ], note that this is a 4D Tensor,
- * @param out_channels:
- * @param kernel_size size of the kernel
- * @param stride The convolution step in each dimension of the image, this is a
- * one-dimensional vector, with length 4
- * @param padding  This value determines the different convolution methods
- */
 template <typename T>
 Conv2d<T>::Conv2d(size_t in_channels,
                   size_t out_channels,
@@ -49,13 +34,7 @@ Conv2d<T>::Conv2d(size_t in_channels,
   this->net_ = nullptr;
   kaiming_normal(*this, "ReLU");
 }
-/**
- * @brief 
- * 
- * @tparam T 
- * @param in :input for the network
- * @return xt::xarray<T> 
- */
+
 template <typename T>
 xt::xarray<T> Conv2d<T>::forward(const xt::xarray<T>& in) {
   if (in.shape().size() != 4) {
@@ -100,13 +79,7 @@ xt::xarray<T> Conv2d<T>::forward(const xt::xarray<T>& in) {
                        xt::newaxis(), xt::newaxis());
   return out;
 }
-/**
- * @brief 
- * 
- * @tparam T 
- * @param dout : the backward input
- * @return xt::xarray<T> 
- */
+
 template <typename T>
 xt::xarray<T> Conv2d<T>::backward(const xt::xarray<T>& dout) {
   size_t H, W, H_out, W_out;
@@ -170,12 +143,7 @@ xt::xarray<T> Conv2d<T>::backward(const xt::xarray<T>& dout) {
 
   return this->din_;
 }
-/**
- * @brief get the fan of Conv2d
- * 
- * @tparam T 
- * @return size_t 
- */
+
 template <typename T>
 size_t Conv2d<T>::get_fan() {
   return this->W_.shape(1) * this->W_.shape(2) * this->W_.shape(3);
