@@ -26,9 +26,6 @@ class Net(nn.Module):
         return x #F.log_softmax(x, dim=1)
     
 def train(args, model, device, train_loader, optimizer, epoch):
-    for layer in model.modules():
-        print(layer)
-    exit(0)
     model.train()
     for batch_idx, (data, target) in enumerate(train_loader):
         data, target = data.to(device), target.to(device)
