@@ -1,6 +1,7 @@
 /**
  * @file network.hpp
- * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
+ * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan
+ * Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
  * @brief the definition for the network
  * @version 1.6.0
  * @date 2019-05-30
@@ -36,16 +37,16 @@ public:
    * @brief Polymorphism: define the layer for the pointer
    *
    * @tparam T
-   * @param layer
-   * @return Network<T>&
+   * @param layer   the pointer to the layer
+   * @return        self, so that << can be continuously used
    */
   Network<T>& operator<<(Layer<T>* layer);
   /**
-   * @brief Polymorphism: define the layer for the refernce
+   * @brief Polymorphism: define the layer for the reference
    *
    * @tparam T
-   * @param layer
-   * @return Network<T>&
+   * @param layer   the reference of the layer
+   * @return        self, so that << can be continuously used
    */
   Network<T>& operator<<(Layer<T>& layer);
   // add loss func
@@ -53,48 +54,50 @@ public:
    * @brief Polymorphism: define the loss function for the pointer
    *
    * @tparam T
-   * @param loss
-   * @return Network<T>&
+   * @param loss    the pointer to the loss
+   * @return        self, so that << can be continuously used
    */
   Network<T>& operator<<(Loss<T>* loss);
   /**
    * @brief Polymorphism: define the loss function for the refernce
    *
    * @tparam T
-   * @param loss
-   * @return Network<T>&
+   * @param loss    the reference of the loss
+   * @return        self, so that << can be continuously used
    */
   Network<T>& operator<<(Loss<T>& loss);
 
   /**
    * @brief Get the optimizer object
    *
-   * @return Optimizer<T>*
+   * @return   the pointer to the optimizer object
    */
   virtual Optimizer<T>* get_optimizer() { return optimizer_; };
   /**
    * @brief Set the optimizer object
    *
-   * @param opt
+   * @param opt   the pointer to optimizer object
    */
   virtual void set_optimizer(Optimizer<T>* opt) { optimizer_ = opt; };
   /**
-   * @brief predict the label of the image
+   * @brief predict the result given an input
    *
-   * @param in
-   * @return Matrix
+   * @param in   the input matrix
+   * @return     the predicted result
    */
   virtual Matrix predict(const Matrix& in);
+
   /**
-   * @brief forward in the network
+   * @brief forward function in the network
    *
-   * @param in
-   * @param target
-   * @return Matrix
+   * @param in       the input matrix
+   * @param target   the labels for the inputs
+   * @return         the loss
    */
   virtual Matrix forward(const Matrix& in, const Matrix& target);
+
   /**
-   * @brief backward in the network
+   * @brief backward function in the network
    *
    */
   virtual void backward();

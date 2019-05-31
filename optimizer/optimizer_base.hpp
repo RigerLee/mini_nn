@@ -44,16 +44,7 @@ public:
   typedef xt::xarray<T> Matrix;
   typedef typename Matrix::shape_type Shape;
 
-  /**
-   * @brief Construct a new Optimizer object
-   *
-   */
   Optimizer() = default;
-
-  /**
-   * @brief Destroy the Optimizer object
-   *
-   */
   virtual ~Optimizer() = default;
 
   /**

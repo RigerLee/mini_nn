@@ -46,7 +46,6 @@ public:
   /**
    * @brief forward function in the network
    *
-   * @tparam T
    * @param in   the input matrix
    * @return     the output matrix
    */

@@ -48,50 +48,50 @@ public:
   /**
    * @brief backward function in the networ
    *
-   * @param dout    the derivative matrix
-   * @return        the output matrix
+   * @param dout    the derivative of output matrix
+   * @return        the derivative of input matrix
    */
   virtual Matrix backward(const Matrix& dout) = 0;
   /**
    * @brief
    *
-   * @return Shape
+   * @return the shape of weight matrix
    */
   virtual Shape weight_shape() { return W_.shape(); };
   /**
    * @brief
    *
-   * @return Shape
+   * @return the shape of bias matrix
    */
   virtual Shape bias_shape() { return b_.shape(); };
   /**
    * @brief Set the weight object
    *
-   * @param W
+   * @param W   the weight matrix
    */
   virtual void set_weight(const Matrix& W) { W_ = W; };
   /**
    * @brief Set the bias object
    *
-   * @param b
+   * @param b   the bias matrix
    */
   virtual void set_bias(const Matrix& b) { b_ = b; };
   /**
    * @brief Set the network object
    *
-   * @param net
+   * @param net    the network object
    */
   virtual void set_network(Network<T>* net) { net_ = net; };
   /**
-   * @brief Get the type object
+   * @brief Get the type of the layer
    *
-   * @return LAYER_TYPE
+   * @return the type of the layer
    */
   virtual LAYER_TYPE get_type() { return layer_type_; };
   /**
-   * @brief Get the fan object
+   * @brief Get the fan
    *
-   * @return size_t
+   * @return the fan
    */
   virtual size_t get_fan() { return 0; };
 
