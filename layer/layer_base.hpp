@@ -4,9 +4,9 @@
  * @brief the attribute of the base of the layter
  * @version 1.6.0
  * @date 2019-05-30
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 
 #pragma once
@@ -15,7 +15,7 @@
 #include "utils.hpp"
 /**
  * @brief enumerate the layer type
- * 
+ *
  */
 enum LAYER_TYPE { CONV, LINEAR, POOL, ACT };
 
@@ -35,70 +35,63 @@ class Layer {
 public:
   typedef xt::xarray<T> Matrix;
   typedef typename Matrix::shape_type Shape;
-  /**
-   * @brief Construct a new Layer object
-   * 
-   */
+
   Layer() = default;
-  /**
-   * @brief Destroy the Layer object
-   * 
-   */
   virtual ~Layer() = default;
   /**
    * @brief forward function in the network
-   * 
-   * @param the input of the network
-   * @return Matrix 
+   *
+   * @param in    the input matrix
+   * @return      the output matrix
    */
   virtual Matrix forward(const Matrix& in) = 0;
   /**
    * @brief backward function in the networ
    *
-   * @param dout Derivative 
-   * @return Matrix
+   * @param dout    the derivative matrix
+   * @return        the output matrix
    */
   virtual Matrix backward(const Matrix& dout) = 0;
   /**
-   * @brief 
-   * 
-   * @return Shape 
+   * @brief
+   *
+   * @return Shape
    */
   virtual Shape weight_shape() { return W_.shape(); };
   /**
-   * @brief 
-   * 
-   * @return Shape 
+   * @brief
+   *
+   * @return Shape
    */
   virtual Shape bias_shape() { return b_.shape(); };
   /**
    * @brief Set the weight object
-   * 
-   * @param W 
+   *
+   * @param W
    */
   virtual void set_weight(const Matrix& W) { W_ = W; };
   /**
    * @brief Set the bias object
-   * 
-   * @param b 
+   *
+   * @param b
    */
   virtual void set_bias(const Matrix& b) { b_ = b; };
   /**
    * @brief Set the network object
-   * 
-   * @param net 
+   *
+   * @param net
    */
   virtual void set_network(Network<T>* net) { net_ = net; };
   /**
    * @brief Get the type object
-   * 
-   * @return LAYER_TYPE 
+   *
+   * @return LAYER_TYPE
    */
   virtual LAYER_TYPE get_type() { return layer_type_; };
   /**
    * @brief Get the fan object
-   * 
-   * @return size_t 
+   *
+   * @return size_t
    */
   virtual size_t get_fan() { return 0; };
 

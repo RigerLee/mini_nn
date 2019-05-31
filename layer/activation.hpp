@@ -14,7 +14,7 @@
 #include "layer_base.hpp"
 
 /**
- * @brief ReLu Class, the rectifier is an activation function
+ * @brief ReLU Class, the rectifier is an activation function
  *
  * @tparam T
  * @details
@@ -40,33 +40,23 @@ public:
   typedef xt::xarray<T> Matrix;
   typedef typename Matrix::shape_type Shape;
 
-  /**
-   * @brief Construct a new ReLU object
-   *
-   */
   ReLU();
-
-  /**
-   * @brief Destroy the ReLU object
-   *
-   */
   virtual ~ReLU() = default;
 
   /**
    * @brief forward function in the network
    *
    * @tparam T
-   * @param in : the input matrix
-   * @return Matrix : the output matrix
-   * @details
+   * @param in   the input matrix
+   * @return     the output matrix
    */
   virtual Matrix forward(const Matrix& in) override;
 
   /**
    * @brief backward function in the network
    *
-   * @param dout : the input matrix
-   * @return Matrix : the output matrix
+   * @param dout   the input matrix
+   * @return       the output matrix
    */
   virtual Matrix backward(const Matrix& dout) override;
 };

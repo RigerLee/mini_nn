@@ -3,10 +3,8 @@
  * @file data_loader_impl.hpp
  * @brief load data
  * @details head file
- * @mainpage mini_nn
- *@author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan
+ * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan
  Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
-
  * @version 1.6.0
  * @date 2019-05-30
  */
@@ -184,8 +182,8 @@ void Dataset<T>::normalize(const xt::xarray<T>& mean,
  *
  * @tparam T
  * @param paths the path images stored in
- * @param mean the mean of the picture
- * @param std
+ * @param mean the mean
+ * @param stdev the standard deviation
  * @return xt::xarray<T>
  */
 template <typename T>

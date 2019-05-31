@@ -33,33 +33,29 @@ public:
   typedef xt::xarray<T> Matrix;
   typedef typename Matrix::shape_type Shape;
 
-  /**
-   * @brief Construct a new Conv 2d object
-   *
-   */
   Conv2d() = default;
-
-  /**
-   * @brief Destroy the Conv 2d object
-   *
-   */
   virtual ~Conv2d() = default;
 
   /**
    * @brief Construct a new Conv 2d< T>:: Conv 2d object
    *
    * @tparam T
-   * @param in_channels :   It refers to the input image that needs to be
+   * @param in_channels
+   * It refers to the input image that needs to be
    * convolved. It is required to be a Tensor with a shape such as [batch,
    * in_height, in_width, in_channels]. The specific meaning is [the number of
    * pictures of a batch during training, the height of the picture, the width
-   * of the image, the number of image channels. ], note that this is a 4D
-   * Tensor,
-   * @param out_channels : The number of output channels.
-   * @param kernel_size : size of the kernel
-   * @param stride : The convolution step in each dimension of the image, this
+   * of the image, the number of image channels]. Note that this is a 4D
+   * tensor.
+   * @param out_channels
+   * the number of output channels
+   * @param kernel_size
+   * size of the kernel
+   * @param stride
+   * The convolution step in each dimension of the image, this
    * is a one-dimensional vector, with length 4
-   * @param padding : This value determines the different convolution methods
+   * @param padding
+   * This value determines the different convolution methods
    */
   Conv2d(size_t in_channels,
          size_t out_channels,
@@ -71,8 +67,8 @@ public:
    * @brief forward function in the network
    *
    * @tparam T
-   * @param in : the input matrix
-   * @return Matrix : the output matrix
+   * @param in     the input matrix
+   * @return       the output matrix
    * @details
    */
   virtual Matrix forward(const Matrix& in) override;
@@ -80,8 +76,8 @@ public:
   /**
    * @brief backward function in the network
    *
-   * @param dout : the input matrix
-   * @return Matrix : the output matrix
+   * @param dout     the input matrix
+   * @return Matrix  the output matrix
    */
   virtual Matrix backward(const Matrix& dout) override;
 

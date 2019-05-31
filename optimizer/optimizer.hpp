@@ -1,12 +1,13 @@
 /**
  * @file optimizer.hpp
- * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
+ * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan
+ * Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
  * @brief the header file of optimizer
  * @version 1.6.0
  * @date 2019-05-30
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 #pragma once
 
@@ -29,11 +30,11 @@ method
  * Both statistical estimation and machine learning consider the problem of
 minimizing an objective function that has the form of a sum:
 
-{\displaystyle Q(w)={\frac {1}{n}}\sum _{i=1}^{n}Q_{i}(w),} {\displaystyle
-Q(w)={\frac {1}{n}}\sum _{i=1}^{n}Q_{i}(w),} where the parameter {\displaystyle
-w} w that minimizes {\displaystyle Q(w)} Q(w) is to be estimated. Each summand
-function {\displaystyle Q_{i}} Q_{i} is typically associated with the
-{\displaystyle i} i-th observation in the data set (used for training).
+\f[ Q(w)={\frac {1}{n}}\sum _{i=1}^{n}Q_{i}(w), \f]
+
+where the parameter \f$ w \f$ that minimizes \f$ Q(w) \f$ is to be estimated.
+Each summand function \f$ Q_i \f$ is typically associated with the \f$ i \f$-th
+observation in the data set (used for training).
 
 In classical statistics, sum-minimization problems arise in least squares and in
 maximum-likelihood estimation (for independent observations). The general class
@@ -45,16 +46,16 @@ stationary points of the likelihood function (or zeros of its derivative, the
 score function, and other estimating equations).
 
 The sum-minimization problem also arises for empirical risk minimization. In
-this case, {\displaystyle Q_{i}(w)} Q_{i}(w) is the value of the loss function
-at {\displaystyle i} i-th example, and {\displaystyle Q(w)} Q(w) is the
+this case, \f$ Q_i(w) \f$ is the value of the loss function
+at \f$ i \f$-th example, and \f$ Q(w) \f$ is the
 empirical risk.
 
 When used to minimize the above function, a standard (or "batch") gradient
 descent method would perform the following iterations :
 
-{\displaystyle w:=w-\eta \nabla Q(w)=w-\eta \sum _{i=1}^{n}\nabla Q_{i}(w)/n,}
-{\displaystyle w:=w-\eta \nabla Q(w)=w-\eta \sum _{i=1}^{n}\nabla Q_{i}(w)/n,}
-where {\displaystyle \eta } \eta  is a step size (sometimes called the learning
+\f[ w:=w-\eta \nabla Q(w)=w-\eta \sum _{i=1}^{n}\nabla Q_{i}(w)/n, \f]
+
+where \f$ \eta \f$ is a step size (sometimes called the learning
 rate in machine learning).
 
 In many cases, the summand functions have a simple form that enables inexpensive
@@ -77,27 +78,27 @@ class SGD : public Optimizer<T> {
 public:
   typedef xt::xarray<T> Matrix;
   typedef typename Matrix::shape_type Shape;
-/**
- * @brief Construct a new SGD object
- * 
- * @param lr init with 0.
- * @param momentum init with 1 
- * @param weight_decay default is 0
- */
+  /**
+   * @brief Construct a new SGD object
+   *
+   * @param lr init with 0.
+   * @param momentum init with 1
+   * @param weight_decay default is 0
+   */
   SGD(T lr = 0.1, T momentum = 1., T weight_decay = 0.);
-  
+
   /**
    * @brief Destroy the SGD object
-   * 
+   *
    */
   virtual ~SGD() = default;
 
-/**
- * @brief update the network
- * 
- * @param target 
- * @param grad 
- */
+  /**
+   * @brief update the network
+   *
+   * @param target
+   * @param grad
+   */
   virtual void update(Matrix& target, const Matrix& grad) override;
 
 protected:
