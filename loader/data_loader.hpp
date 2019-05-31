@@ -60,34 +60,34 @@ public:
   virtual ~Dataset() = default;
 
   /**
-   * @brief read from MINST dataset
+   * @brief read from MNIST dataset
    *
-   * @param path
+   * @param path   the pathname of the MNIST dataset
    */
   void MNIST(const std::string& path);
 
   /**
    * @brief read images from binary form
    *
-   * @param image_file : the image
-   * @param data        : the data
+   * @param image_file   the image file name
+   * @param data         read the image to this matrix
    */
   void read_bin_images(const std::string& image_file, xt::xarray<T>& data);
 
   /**
    * @brief read labels from binary form
    *
-   * @param label_file: the labelled file
-   * @param label     : the label of the file, from 1 to 9
+   * @param label_file   the pathname of the labeled file
+   * @param label        the label of the file, from 1 to 9
    */
   void read_bin_labels(const std::string& label_file, xt::xarray<T>& label);
 
   /**
    * @brief load the image
    *
-   * @param mode : the ways we read
-   * @param batch_size : the size of batch
-   * @return std::vector<std::pair<Matrix, Matrix>>
+   * @param mode         the ways we read
+   * @param batch_size   the size of batch
+   * @return a vector of pairs of the input matrix together with the label
    */
   std::vector<std::pair<Matrix, Matrix>> loader(const std::string& mode,
                                                 int batch_size = 1);
@@ -96,10 +96,10 @@ public:
    * @brief normalize function for the train and test data
    *
    * @tparam T
-   * @param mean:  mean
-   * @param stdev: standard deviation
+   * @param mean    mean
+   * @param stdev   standard deviation
    * @details Average the image according to the given mean and standard
-   * deviation, by calling data_normalize
+   * deviation, by calling data_normalize.
    */
   virtual void normalize(const xt::xarray<T>& mean, const xt::xarray<T>& stdev);
 

@@ -76,8 +76,8 @@ public:
   /**
    * @brief backward function in the network
    *
-   * @param dout     the input matrix
-   * @return Matrix  the output matrix
+   * @param dout     the derivative of output matrix
+   * @return         the derivative of input matrix
    */
   virtual Matrix backward(const Matrix& dout) override;
 
