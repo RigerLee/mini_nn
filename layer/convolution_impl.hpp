@@ -124,7 +124,7 @@ xt::xarray<T> Conv2d<T>::backward(const xt::xarray<T>& dout) {
                                       {this->padding_, this->padding_}});
   Matrix din_pad = xt::zeros_like(in_pad);
   this->dW_ = xt::zeros_like(this->W_);
-
+  #pragma omp parallel for
   for (size_t i = 0; i < H_out; ++i) {
     for (size_t j = 0; j < W_out; ++j) {
       auto in_pad_part = xt::view(
