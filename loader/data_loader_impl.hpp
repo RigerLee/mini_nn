@@ -4,7 +4,8 @@
  * @brief load data
  * @details head file
  * @mainpage mini_nn
- *@author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
+ *@author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan
+ Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
 
  * @version 1.6.0
  * @date 2019-05-30
@@ -49,8 +50,8 @@ Dataset<T>::Dataset(bool shuffle) : shuffle_(shuffle) {}
 
 /**
  * @brief read the MNIST dataset
- * 
- * @tparam T 
+ *
+ * @tparam T
  * @param path the path stored the dataset
  */
 template <typename T>
@@ -69,13 +70,14 @@ void Dataset<T>::MNIST(const std::string& path) {
   std::cout << "test: ";
   cout_shape(test_data_);
 }
+
 /**
  * @brief load the data
- * 
- * @tparam T 
+ *
+ * @tparam T
  * @param mode   the way we convolution
  * @param batch_size   the size of the batch
- * @return std::vector<std::pair<xt::xarray<T>, xt::xarray<T>>> 
+ * @return std::vector<std::pair<xt::xarray<T>, xt::xarray<T>>>
  */
 template <typename T>
 std::vector<std::pair<xt::xarray<T>, xt::xarray<T>>> Dataset<T>::loader(
@@ -109,11 +111,12 @@ std::vector<std::pair<xt::xarray<T>, xt::xarray<T>>> Dataset<T>::loader(
   }
   return out;
 }
+
 /**
  * @brief read the int, store in the output
- * 
- * @param in 
- * @return int 
+ *
+ * @param in
+ * @return int
  */
 int read_int(char* in) {
   int out;
@@ -125,10 +128,11 @@ int read_int(char* in) {
   p[3] = in[0];
   return out;
 }
+
 /**
  * @brief read images from binary form
- * 
- * @tparam T 
+ *
+ * @tparam T
  * @param image_file the file  which stores the image
  * @param data       the data
  */
@@ -164,10 +168,11 @@ void Dataset<T>::read_bin_images(const std::string& image_file,
   fclose(fp);
   // std::cout << "Read images " << image_file << " done.\n";
 }
+
 /**
  * @brief read labels from binary form
- * 
- * @tparam T 
+ *
+ * @tparam T
  * @param label_file the file which is labelled
  * @param label  the label
  */
@@ -197,53 +202,68 @@ void Dataset<T>::read_bin_labels(const std::string& label_file,
   fclose(fp);
   // std::cout << "Read labels " << label_file << " done.\n";
 }
+
 /**
- * @brief normalize funtion
+ * @brief normalize function
  *
  * @tparam T
- * @param mean:  average
- * @param stdev: std
- * @details Average the image according to the given mean and std
+ * @param data:  the data matrix
+ * @param mean:  mean
+ * @param stdev: standard deviation
+ * @details Average the data according to the given mean and standard deviation
+ */
+template <typename T>
+void data_normalize(xt::xarray<T>& data,
+                    const xt::xarray<T>& mean,
+                    const xt::xarray<T>& stdev) {
+  // mean and std: 1D array
+  if (mean.shape(0) != stdev.shape(0))
+    throw std::runtime_error("normalize: mean and stdev have different shape");
+  if (mean.shape(0) != data.shape(1))
+    throw std::runtime_error(
+      "normalize: mean/stdev and images have different channel");
+  // result = (in - mean) / std
+  data -=
+    xt::view(mean, xt::newaxis(), xt::all(), xt::newaxis(), xt::newaxis());
+  data /=
+    xt::view(stdev, xt::newaxis(), xt::all(), xt::newaxis(), xt::newaxis());
+}
+
+/**
+ * @brief normalize function for the train and test data
+ *
+ * @tparam T
+ * @param mean:  mean
+ * @param stdev: standard deviation
+ * @details Average the image according to the given mean and standard
+ * deviation, by calling data_normalize
  */
 template <typename T>
 void Dataset<T>::normalize(const xt::xarray<T>& mean,
                            const xt::xarray<T>& stdev) {
-  // mean and std: 1D array
-  if (mean.shape(0) != stdev.shape(0))
-    throw std::runtime_error("normalize: mean and stdev have different shape");
-  if (mean.shape(0) != train_data_.shape(1))
-    throw std::runtime_error(
-      "normalize: mean/stdev and images have different channel");
-  // result = (in - mean) / std
-  train_data_ =
-    (train_data_ -
-     xt::view(mean, xt::newaxis(), xt::all(), xt::newaxis(), xt::newaxis())) /
-    xt::view(stdev, xt::newaxis(), xt::all(), xt::newaxis(), xt::newaxis());
-
-  test_data_ =
-    (test_data_ -
-     xt::view(mean, xt::newaxis(), xt::all(), xt::newaxis(), xt::newaxis())) /
-    xt::view(stdev, xt::newaxis(), xt::all(), xt::newaxis(), xt::newaxis());
+  data_normalize(train_data_, mean, stdev);
+  data_normalize(test_data_, mean, stdev);
 }
+
 /**
  * @brief load images from binary form
- * 
- * @tparam T 
+ *
+ * @tparam T
  * @param paths the path images stored in
  * @param mean the mean of the picture
- * @param std  
- * @return xt::xarray<T> 
+ * @param std
+ * @return xt::xarray<T>
  */
 template <typename T>
 xt::xarray<T> load_images(const std::vector<std::string>& paths,
                           const xt::xarray<T>& mean,
-                          const xt::xarray<T>& std) {
+                          const xt::xarray<T>& stdev) {
   typename xt::xarray<T>::shape_type rshape = {0};
   xt::xarray<T> result(rshape);
   bool not_reshaped = true;
   for (auto& path : paths) {
     xt::xarray<T> image = xt::transpose(xt::load_image(path), {2, 0, 1});
-    //    normalize(mean, std);
+    data_normalize(image, mean, stdev);
     auto shape = image.shape();
     size_t C = shape[0];
     size_t H = shape[1];
