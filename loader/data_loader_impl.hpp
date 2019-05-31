@@ -100,8 +100,7 @@ std::vector<std::pair<xt::xarray<T>, xt::xarray<T>>> Dataset<T>::loader(
       indexs, xt::range(i * batch_size,
                         my_min((int)data.shape(0), (i + 1) * batch_size)));
     // stupied library to index array...  rows and idx are identity...
-    // has use flatten_indices to convert array to index type
-    auto idx = xt::flatten_indices(xt::argwhere(rows >= 0));
+    xt::xtensor<size_t, 1> idx = rows;
     auto data_temp =
       Matrix(xt::view(data, xt::keep(idx), xt::all(), xt::all(), xt::all()));
     auto label_temp = Matrix(xt::view(label, xt::keep(idx)));
@@ -244,7 +243,7 @@ xt::xarray<T> load_images(const std::vector<std::string>& paths,
   bool not_reshaped = true;
   for (auto& path : paths) {
     xt::xarray<T> image = xt::transpose(xt::load_image(path), {2, 0, 1});
-//    normalize(mean, std);
+    //    normalize(mean, std);
     auto shape = image.shape();
     size_t C = shape[0];
     size_t H = shape[1];

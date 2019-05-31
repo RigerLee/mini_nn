@@ -1,17 +1,20 @@
 /**
  * @file test_loader.cpp
- * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
+ * @author RuiJian Li(lirj@shanghaitech.edu.cn), YiFan
+ * Cao(caoyf@shanghaitech.edu.cn), YanPeng Hu(huyp@shanghaitech.edu.cn)
  * @brief to test the loader  whether worked out or not
  * @version 1.6.0
  * @date 2019-05-30
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 #include "data_loader.hpp"
 
+#include <chrono>
+#include <cstdlib>
+#include <ctime>
 #include "model_loader.hpp"
-#include "xtensor/xsort.hpp"
 
 using namespace std;
 /**
@@ -22,22 +25,31 @@ using namespace std;
  * @return int
  */
 int main(int argc, char** argv) {
-  // std::vector<std::string> v {"a.jpg", "b.jpg"};
-  // auto result = load_images<double>(v, {0, 0, 0}, {1, 2, 4});
-  // std::cout << result << std::endl;
-  Dataset<double> loader;
+  Dataset<float> loader;
   loader.MNIST("./data/");
   loader.normalize({0.1307}, {0.3081});
-  auto train = loader.loader("train", 10);
-  cout << train.size() << endl;
+  auto test = loader.loader("test", 1000);
 
+  int correct = 0;
+  int total = 0;
   Network<float> net;
-  // auto input = xt::linspace<float>(-1., 1., 784).reshape({1, 1, 28, 28});
   load_model(net, "./model/layer.txt");
-  auto temp = net.predict(train[0].first);
-  temp = xt::argmax(temp, 1);
-  cout << temp << endl;
-  cout << train[0].second << endl;
+  auto t_start = std::chrono::system_clock::now();
+  for (auto& t : test) {
+    auto temp = xt::argmax(net.predict(t.first), 1);
+    auto target = t.second;
+    for (size_t i = 0; i < temp.size(); ++i) {
+      if (temp(i) - target(i) < 1e-6) ++correct;
+    }
+    total += temp.size();
+    cout << "Acc: " << (float)correct / total << endl;
+  }
+  auto t_end = std::chrono::system_clock::now();
+  std::chrono::duration<double> elapsed_seconds = t_end - t_start;
+  cout << "Total time: " << elapsed_seconds.count() << " s" << endl;
+
+  // auto acc = xt::sum(, {0});
+  // acc /= test[0].second.size();
 
   return 0;
 }
